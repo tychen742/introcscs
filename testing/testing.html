@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>6. Testing &mdash; Introduction to Computer Science in C# 19 Jul 2024 documentation</title>
+  <title>7. Testing &mdash; Introduction to Computer Science in C# 19 Jul 2024 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="7. Interfaces" href="../interfaces/interfaces.html" />
-    <link rel="prev" title="5.5. Chapter Review Questions" href="../dictionaries/reviewdictionaries.html" /> 
+    <link rel="next" title="8. Interfaces" href="../interfaces/interfaces.html" />
+    <link rel="prev" title="6.5. Chapter Review Questions" href="../dictionaries/reviewdictionaries.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -49,16 +49,17 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../functions/functions.html">1. Defining Functions of your Own</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files/files.html">2. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">3. 10. Arrays</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">4. Lists</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">5. Dictionaries</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Testing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../interfaces/interfaces.html">7. Interfaces</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../recursion/recursion.html">8. Recursion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datastructures/datastructures.html">9. Data Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendix/appendix.html">10. Appendix</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../context/context.html">1. Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../functions/functions.html">2. Defining Functions of your Own</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/files.html">3. Files, Paths, and Directories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">4. 10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">5. Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">6. Dictionaries</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaces/interfaces.html">8. Interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recursion/recursion.html">9. Recursion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datastructures/datastructures.html">10. Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/appendix.html">11. Appendix</a></li>
 </ul>
 
         </div>
@@ -75,7 +76,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active"><span class="section-number">6. </span>Testing</li>
+      <li class="breadcrumb-item active"><span class="section-number">7. </span>Testing</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/testing/testing.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -86,7 +87,7 @@
            <div itemprop="articleBody">
              
   <section id="testing">
-<span id="index-0"></span><span id="id1"></span><h1><span class="section-number">6. </span>Testing<a class="headerlink" href="#testing" title="Permalink to this heading"></a></h1>
+<span id="index-0"></span><span id="id1"></span><h1><span class="section-number">7. </span>Testing<a class="headerlink" href="#testing" title="Permalink to this heading"></a></h1>
 <p>Now that we have learned a bit about classes, we’re going to use the same feature
 to support <em>unit testing</em>. Unit testing is a concept that will become part of just
 about everything you do in future programming-focused courses, so we want to make sure
@@ -98,7 +99,7 @@ languages view the <em>class</em> concept as the core unit of testing. Once we h
 we can test it and all of the parts associated with it, especially its methods.</p>
 <p>We will be introducing parts of file <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/rational_nunit/rational_unit_tests.cs">rational_nunit/rational_unit_tests.cs</a>.</p>
 <section id="assertions">
-<span id="index-1"></span><h2><span class="section-number">6.1. </span>Assertions<a class="headerlink" href="#assertions" title="Permalink to this heading"></a></h2>
+<span id="index-1"></span><h2><span class="section-number">7.1. </span>Assertions<a class="headerlink" href="#assertions" title="Permalink to this heading"></a></h2>
 <p>A key notion of testing is the ability to make a logical assertion about something
 that generally must hold <em>true</em> if the test is to pass.</p>
 <p>Assertions are not a standard language feature in C#. Instead, there are a number of
@@ -124,7 +125,7 @@ rather similarly, because every assertion method ultimately must determine wheth
 what is being tested is true or false.</p>
 </section>
 <section id="attributes">
-<span id="index-2"></span><h2><span class="section-number">6.2. </span>Attributes<a class="headerlink" href="#attributes" title="Permalink to this heading"></a></h2>
+<span id="index-2"></span><h2><span class="section-number">7.2. </span>Attributes<a class="headerlink" href="#attributes" title="Permalink to this heading"></a></h2>
 <p>Besides assertions, a building block of testing (in C# and beyond) comes in the form
 of attributes. Attributes are an additional piece of information that can be attached
 to classes, variables, and methods in C#. There are two attributes of interest to us:</p>
@@ -154,7 +155,7 @@ fractions into properly initialized (and reduced) rational numbers.</p></li>
 <p>Let’s get started.</p>
 </section>
 <section id="testing-the-constructor">
-<h2><span class="section-number">6.3. </span>Testing the Constructor<a class="headerlink" href="#testing-the-constructor" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">7.3. </span>Testing the Constructor<a class="headerlink" href="#testing-the-constructor" title="Permalink to this heading"></a></h2>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w">      </span><span class="na">[Test()]</span>
 <span class="linenos"> 2</span><span class="w">      </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ConstructorTest</span><span class="p">()</span>
 <span class="linenos"> 3</span><span class="w">      </span><span class="p">{</span>
@@ -195,7 +196,7 @@ our constructor test is a success. Otherwise, it is a failure.</p></li>
 at how the rest of our testing is done.</p>
 </section>
 <section id="testing-rational-comparisons">
-<h2><span class="section-number">6.4. </span>Testing Rational Comparisons<a class="headerlink" href="#testing-rational-comparisons" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">7.4. </span>Testing Rational Comparisons<a class="headerlink" href="#testing-rational-comparisons" title="Permalink to this heading"></a></h2>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="w">      </span><span class="na">[Test()]</span>
 <span class="linenos">2</span><span class="w">      </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">BasicComparisonTests</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="linenos">3</span><span class="w">         </span><span class="n">Rational</span><span class="w"> </span><span class="n">r1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rational</span><span class="p">(</span><span class="o">-</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="p">);</span>
@@ -221,7 +222,7 @@ arithmetic tests, which rely on the ability to test whether a <em>computed resul
 an <em>expected result</em> (e.g. 1/4 + 2/4 == 3/4).</p>
 </section>
 <section id="testing-rational-arithmetic">
-<h2><span class="section-number">6.5. </span>Testing Rational Arithmetic<a class="headerlink" href="#testing-rational-arithmetic" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">7.5. </span>Testing Rational Arithmetic<a class="headerlink" href="#testing-rational-arithmetic" title="Permalink to this heading"></a></h2>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w">      </span><span class="na">[Test()]</span>
 <span class="linenos"> 2</span><span class="w">      </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">BasicArithmeticTests</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="linenos"> 3</span><span class="w">         </span><span class="n">Rational</span><span class="w"> </span><span class="n">r</span><span class="p">,</span><span class="w"> </span><span class="n">r1</span><span class="p">,</span><span class="w"> </span><span class="n">r2</span><span class="p">;</span>
@@ -276,7 +277,7 @@ constructor and/or comparison tests as well).</p>
 minimal explanation as they are in many ways variations on the theme.</p>
 </section>
 <section id="testing-rational-conversions-to-other-types">
-<h2><span class="section-number">6.6. </span>Testing Rational Conversions (to other types)<a class="headerlink" href="#testing-rational-conversions-to-other-types" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">7.6. </span>Testing Rational Conversions (to other types)<a class="headerlink" href="#testing-rational-conversions-to-other-types" title="Permalink to this heading"></a></h2>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w">      </span><span class="na">[Test()]</span>
 <span class="linenos"> 2</span><span class="w">      </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ConversionTests</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <span class="linenos"> 3</span><span class="w">         </span><span class="n">Rational</span><span class="w"> </span><span class="n">r1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rational</span><span class="p">(</span><span class="m">3</span><span class="p">,</span><span class="w"> </span><span class="m">6</span><span class="p">);</span>
@@ -299,7 +300,7 @@ and decimal types (the built-in types of the C# language).</p>
 representations.</p>
 </section>
 <section id="testing-the-parsing-feature">
-<h2><span class="section-number">6.7. </span>Testing the Parsing Feature<a class="headerlink" href="#testing-the-parsing-feature" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">7.7. </span>Testing the Parsing Feature<a class="headerlink" href="#testing-the-parsing-feature" title="Permalink to this heading"></a></h2>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w">      </span><span class="na">[Test()]</span>
 <span class="linenos"> 2</span><span class="w">      </span><span class="k">public</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">ParseTest</span><span class="p">()</span>
 <span class="linenos"> 3</span><span class="w">      </span><span class="p">{</span>
@@ -328,7 +329,7 @@ is reduced.</p></li>
 </ul>
 </section>
 <section id="running-the-nunit-tests">
-<span id="running-nunit-tests"></span><span id="index-3"></span><h2><span class="section-number">6.8. </span>Running the NUnit Tests<a class="headerlink" href="#running-the-nunit-tests" title="Permalink to this heading"></a></h2>
+<span id="running-nunit-tests"></span><span id="index-3"></span><h2><span class="section-number">7.8. </span>Running the NUnit Tests<a class="headerlink" href="#running-the-nunit-tests" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>In Xamarin Studio, select the rational_nunit project.</p></li>
 <li><p>In the main Xamarin Studio menu click “Run” and select “Run Unit Tests”</p></li>
@@ -366,7 +367,7 @@ unlike the static methods that we started out with.</p>
 would normally come from the command line.  See the small project
 <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/cmdline_to_file">cmdline_to_file</a>.</p>
 <section id="string-replace-nunit-test-exercise">
-<span id="index-4"></span><h3><span class="section-number">6.8.1. </span>String Replace NUnit Test Exercise<a class="headerlink" href="#string-replace-nunit-test-exercise" title="Permalink to this heading"></a></h3>
+<span id="index-4"></span><h3><span class="section-number">7.8.1. </span>String Replace NUnit Test Exercise<a class="headerlink" href="#string-replace-nunit-test-exercise" title="Permalink to this heading"></a></h3>
 <p>If you completed the program from the stub
 <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/string_manip_stub/string_manip.cs">string_manip_stub/string_manip.cs</a>,
 then add a testing class using NUnit that tests <code class="docutils literal notranslate"><span class="pre">ReplaceFirst</span></code>
@@ -376,7 +377,7 @@ string when the target is not found, then add tests for that, too.
 Remember the necessary library reference and try it out.</p>
 </section>
 <section id="grade-file-nunit-test-exercise">
-<span id="index-5"></span><h3><span class="section-number">6.8.2. </span>Grade File NUnit Test Exercise<a class="headerlink" href="#grade-file-nunit-test-exercise" title="Permalink to this heading"></a></h3>
+<span id="index-5"></span><h3><span class="section-number">7.8.2. </span>Grade File NUnit Test Exercise<a class="headerlink" href="#grade-file-nunit-test-exercise" title="Permalink to this heading"></a></h3>
 <p>Add a testing class using NUnit to <a class="reference internal" href="../appendix/hw-gradefiles.html#hw-gradefiles"><span class="std std-ref">Homework: Grade File</span></a>.
 Remember the necessary library reference.
 Sample data files and files for testing the results
@@ -391,15 +392,15 @@ Test with both comp170 and comp150.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../dictionaries/reviewdictionaries.html" class="btn btn-neutral float-left" title="5.5. Chapter Review Questions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../interfaces/interfaces.html" class="btn btn-neutral float-right" title="7. Interfaces" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../dictionaries/reviewdictionaries.html" class="btn btn-neutral float-left" title="6.5. Chapter Review Questions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../interfaces/interfaces.html" class="btn btn-neutral float-right" title="8. Interfaces" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 01:49:32.
+      <span class="lastupdated">Last updated on 19-July-2024 01:52:04.
       </span></p>
   </div>
 
