@@ -50,13 +50,13 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../context/context.html">1. Context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/data.html">2. C# Data and Operations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functions/functions.html">3. Defining Functions of your Own</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basicstringops/basicstringops.html">4. Basic String Operations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../decisions/decisions.html">5. Decisions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../while/while.html">6. While Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../1.context/context.html">1. Context</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../2.data/data.html">2. C# Data and Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../3.functions/functions.html">3. Defining Functions of your Own</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../4.basicstringops/basicstringops.html">4. Basic String Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../5.decisions/decisions.html">5. Decisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../6.while/while.html">6. While Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../7.foreach/foreach.html">7. Foreach Loops</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="for.html">8. For Loops</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="forstatements.html">8.1. For-Statement Syntax</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">8.2. Examples With <code class="docutils literal notranslate"><span class="pre">for</span></code> Statements</a></li>
@@ -307,7 +307,7 @@ stuff|
 <section id="ascii-codes">
 <span id="ascii"></span><span id="index-3"></span><h2><span class="section-number">8.2.2. </span>ASCII Codes<a class="headerlink" href="#ascii-codes" title="Permalink to this heading"></a></h2>
 <p>Here is a reverse lookup from the
-<a class="reference internal" href="../foreach/foreachexamples.html#codeofstringchar"><span class="std std-ref">Numeric Code of String Characters</span></a>:
+<a class="reference internal" href="../7.foreach/foreachexamples.html#codeofstringchar"><span class="std std-ref">Numeric Code of String Characters</span></a>:
 Find the characters for a list of numeric codes. Just as we can cast a
 <code class="docutils literal notranslate"><span class="pre">char</span></code> to an <code class="docutils literal notranslate"><span class="pre">int</span></code>, we can cast an <code class="docutils literal notranslate"><span class="pre">int</span></code> 0-127 to a <code class="docutils literal notranslate"><span class="pre">char</span></code>.</p>
 <p>The Unicode used
@@ -681,7 +681,7 @@ Knowing a lot more math is useful!
 easy to work out by brute force, going through the row of products.
 A much more efficient
 method is needed for cryptography:  That method involves
-an elaboration of <a class="reference internal" href="../while/gcdexamples.html#gcd"><span class="std std-ref">Greatest Common Divisor</span></a>.</p>
+an elaboration of <a class="reference internal" href="../6.while/gcdexamples.html#gcd"><span class="std std-ref">Greatest Common Divisor</span></a>.</p>
 <p>Finally, let us generalize this table to mod n.  With n up to about 25,
 it is reasonable to print.
 Most of the changes are just replacing 7 by n.
@@ -742,7 +742,7 @@ and in example program
 </section>
 <section id="reversed-string-returned">
 <span id="reverse-string-returned"></span><span id="index-5"></span><h2><span class="section-number">8.2.4. </span>Reversed String Returned<a class="headerlink" href="#reversed-string-returned" title="Permalink to this heading"></a></h2>
-<p>In <a class="reference internal" href="../while/while-with-sequence.html#reversed-print-example"><span class="std std-ref">String Backwards Exercise/Example</span></a> we discuss iterating through a string’s
+<p>In <a class="reference internal" href="../6.while/while-with-sequence.html#reversed-print-example"><span class="std std-ref">String Backwards Exercise/Example</span></a> we discuss iterating through a string’s
 indices and characters to print the string reversed.  That might be useful,
 but it logically the joining of two separate ideas:  reversing a string and
 printing it.  We already know how to print a string as a step.  Now consider
@@ -831,7 +831,7 @@ So what would <code class="docutils literal notranslate"><span class="pre">rev</
 that will just randomly print <code class="docutils literal notranslate"><span class="pre">Heads</span></code> or <code class="docutils literal notranslate"><span class="pre">Tails</span></code> <em>once</em>.
 Accomplish this by choosing 0 or 1 arbitrarily with a random
 number generator.  More details follow.</p>
-<p>Use a <code class="docutils literal notranslate"><span class="pre">Random</span></code> object, as in <a class="reference internal" href="../while/lab-number-game.html#lab-number-game"><span class="std std-ref">Number Guessing Game Lab</span></a>, <em>except</em> this time it is
+<p>Use a <code class="docutils literal notranslate"><span class="pre">Random</span></code> object, as in <a class="reference internal" href="../6.while/lab-number-game.html#lab-number-game"><span class="std std-ref">Number Guessing Game Lab</span></a>, <em>except</em> this time it is
 important <em>not</em> to make the <code class="docutils literal notranslate"><span class="pre">Random</span></code> object be a local variable inside
 the <code class="docutils literal notranslate"><span class="pre">Flip</span></code> function:  A new <code class="docutils literal notranslate"><span class="pre">Random</span></code> object in likely
 initialized using the current time.  The <code class="docutils literal notranslate"><span class="pre">Flip</span></code> function has no interaction
@@ -847,7 +847,7 @@ One way to do that is to make it <em>static</em>.  Place the declaration</p>
 </pre></div>
 </div>
 <p>inside your class but outside of any function, positioned like
-the static constants discussed in <a class="reference internal" href="../functions/staticvariables.html#static-variables"><span class="std std-ref">Static Variables</span></a>.</p>
+the static constants discussed in <a class="reference internal" href="../3.functions/staticvariables.html#static-variables"><span class="std std-ref">Static Variables</span></a>.</p>
 <p>Then you can use <code class="docutils literal notranslate"><span class="pre">r</span></code> in any function in your class.
 For <code class="docutils literal notranslate"><span class="pre">int</span></code> variables <code class="docutils literal notranslate"><span class="pre">low</span></code> and <code class="docutils literal notranslate"><span class="pre">higher</span></code>, with <code class="docutils literal notranslate"><span class="pre">low</span> <span class="pre">&lt;</span> <span class="pre">higher</span></code>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">r</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="n">low</span><span class="p">,</span><span class="w"> </span><span class="n">higher</span><span class="p">);</span>
@@ -1003,7 +1003,7 @@ somewhere in the table. Consider heading widths, too.</p></li>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 02:57:54.
+      <span class="lastupdated">Last updated on 19-July-2024 03:26:47.
       </span></p>
   </div>
 
