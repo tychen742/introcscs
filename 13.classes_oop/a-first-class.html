@@ -46,25 +46,26 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../context/context.html">1. Context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/data.html">2. C# Data and Operations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functions/functions.html">3. Defining Functions of your Own</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basicstringops/basicstringops.html">4. Basic String Operations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../decisions/decisions.html">5. Decisions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../while/while.html">6. While Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../for/for.html">8. For Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">12. Dictionaries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../interfaces/interfaces.html">13. Interfaces</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../recursion/recursion.html">14. Recursion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datastructures/datastructures.html">15. Data Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendix/appendix.html">16. Appendix</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">A First Example of Class Instances: Contact</a><ul>
+<li><a class="reference internal" href="#making-a-datatype">Making a Datatype</a></li>
+<li><a class="reference internal" href="#class-syntax">Class Syntax</a></li>
+<li><a class="reference internal" href="#instance-variables">Instance Variables</a></li>
+<li><a class="reference internal" href="#constructors">Constructors</a></li>
+<li><a class="reference internal" href="#instance-methods">Instance Methods</a></li>
+<li><a class="reference internal" href="#getters">Getters</a></li>
+<li><a class="reference internal" href="#this-object">This Object</a></li>
+<li><a class="reference internal" href="#setters">Setters</a></li>
+<li><a class="reference internal" href="#tostring-override">ToString Override</a></li>
+<li><a class="reference internal" href="#local-variables-hiding-instance-variables">Local Variables Hiding Instance Variables</a><ul>
+<li><a class="reference internal" href="#lifetime-and-scope-exercise-example">Lifetime and Scope Exercise/Example</a></li>
 </ul>
-
+</li>
+</ul>
+</li>
+</ul>
+</div>
         </div>
       </div>
     </nav>
@@ -231,7 +232,7 @@ an <em>instance variable</em>, that is the particular data for an <em>individual
 for an individual instance of the class.
 This is our new place to store data:</p>
 <p>We declare these <em>in</em> the class and <em>outside</em> any method declaration.
-(This is in the same place as we would store <a class="reference internal" href="../functions/staticvariables.html#static-variables"><span class="std std-ref">Static Variables</span></a>).</p>
+(This is in the same place as we would store <a class="reference internal" href="../3.functions/staticvariables.html#static-variables"><span class="std std-ref">Static Variables</span></a>).</p>
 <p>They are <em>fields</em> of the class.  As we will
 discuss more in terms of safety and security,
 we add the word “private” at the beginning:</p>
@@ -394,7 +395,7 @@ print all the contact information with labels.</p>
 </div>
 <p>Again, we use the instance variable names, plugging them into a format string.
 Remember the <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> syntax
-for multiline strings from <a class="reference internal" href="../data/strings2.html#strings2"><span class="std std-ref">String Special Cases</span></a>.</p>
+for multiline strings from <a class="reference internal" href="../2.data_operations/strings2.html#strings2"><span class="std std-ref">String Special Cases</span></a>.</p>
 <p>You can see and see the entire Contact class
 in <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/contact1/contact1.cs">contact1/contact1.cs</a>.</p>
 <p>This is our first complete class defining a new type of object.
@@ -688,7 +689,7 @@ Can you construct an example to illustrate that?  One of ours is
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 01:25:28.
+      <span class="lastupdated">Last updated on 19-July-2024 01:36:36.
       </span></p>
   </div>
 

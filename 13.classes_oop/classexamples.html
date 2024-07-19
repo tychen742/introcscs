@@ -47,25 +47,27 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../context/context.html">1. Context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/data.html">2. C# Data and Operations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functions/functions.html">3. Defining Functions of your Own</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basicstringops/basicstringops.html">4. Basic String Operations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../decisions/decisions.html">5. Decisions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../while/while.html">6. While Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../for/for.html">8. For Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">12. Dictionaries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../interfaces/interfaces.html">13. Interfaces</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../recursion/recursion.html">14. Recursion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datastructures/datastructures.html">15. Data Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendix/appendix.html">16. Appendix</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Class Instance Examples</a><ul>
+<li><a class="reference internal" href="#more-getters-and-setters">More Getters and Setters</a><ul>
+<li><a class="reference internal" href="#statistics-exercise">Statistics Exercise</a></li>
+<li><a class="reference internal" href="#unneeded-constructor-code-exercise">Unneeded Constructor Code Exercise</a></li>
+<li><a class="reference internal" href="#alternate-internal-state-exercise">Alternate Internal State Exercise</a></li>
 </ul>
-
+</li>
+<li><a class="reference internal" href="#converting-a-static-game-to-a-game-instance">Converting A Static Game To A Game Instance</a></li>
+<li><a class="reference internal" href="#animal-class-lab">Animal Class Lab</a></li>
+<li><a class="reference internal" href="#clock-example">Clock Example</a><ul>
+<li><a class="reference internal" href="#alternate-clock-constructor-exercise">Alternate Clock Constructor Exercise</a></li>
+<li><a class="reference internal" href="#clock-with-seconds-exercise">Clock With Seconds Exercise</a></li>
+<li><a class="reference internal" href="#twelve-hour-time-exercise">Twelve Hour Time Exercise</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
         </div>
       </div>
     </nav>
@@ -139,7 +141,7 @@
 </pre></div>
 </div>
 <p>Besides the obvious tests, we also use
-the fact that an Example object is mutable to play with  <a class="reference internal" href="../arrays/onedim.html#alias"><span class="std std-ref">References and Aliases</span></a>:
+the fact that an Example object is mutable to play with  <a class="reference internal" href="../10.arrays/onedim.html#alias"><span class="std std-ref">References and Aliases</span></a>:
 In the
 last few lines of <code class="docutils literal notranslate"><span class="pre">Main</span></code>, after <code class="docutils literal notranslate"><span class="pre">e</span></code> becomes an alias for <code class="docutils literal notranslate"><span class="pre">e2</span></code>,
 we change
@@ -358,16 +360,16 @@ NaN, you need the boolean <code class="docutils literal notranslate"><span class
 <section id="converting-a-static-game-to-a-game-instance">
 <span id="index-3"></span><h2>Converting A Static Game To A Game Instance<a class="headerlink" href="#converting-a-static-game-to-a-game-instance" title="Permalink to this heading"></a></h2>
 <p>For a comparison of procedural and object-oriented coding,
-consider converting <a class="reference internal" href="../while/lab-number-game.html#lab-number-game"><span class="std std-ref">Number Guessing Game Lab</span></a> so that a GuessGame
+consider converting <a class="reference internal" href="../6.while_loops/lab-number-game.html#lab-number-game"><span class="std std-ref">Number Guessing Game Lab</span></a> so that a GuessGame
 is an object, an instance of the GuessGame class.</p>
 <p>While our earlier example, Contact, is a simple but practical
 use of object-oriented programming, GuessGame is somewhat more artificial.
 We create it hoping that highlighting the differences between procedural
 and object-oriented presentation is informative.  Also, we will see
-with <a class="reference internal" href="../interfaces/interfaces.html#interface"><span class="std std-ref">Interfaces</span></a> that
+with <a class="reference internal" href="../15.interfaces/interfaces.html#interface"><span class="std std-ref">Interfaces</span></a> that
 there are C# language features that require an
 object rather than just a function and data.
-In <a class="reference internal" href="../interfaces/csproj-revisited.html#igame-interface-exercise"><span class="std std-ref">IGame Interface Exercise</span></a> you can use a Game object.</p>
+In <a class="reference internal" href="../15.interfaces/csproj-revisited.html#igame-interface-exercise"><span class="std std-ref">IGame Interface Exercise</span></a> you can use a Game object.</p>
 <p>Here is a procedural game version, example file
 <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/static_version/static_version.cs">static_version/static_version.cs</a></p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="w">   </span><span class="k">public</span><span class="w"> </span><span class="k">class</span><span class="w"> </span><span class="nc">Game</span>
@@ -488,7 +490,7 @@ If Froggy eats “worm” and then “fly”, its <code class="docutils literal 
 “worm” and “fly”.</p></li>
 <li><p>An Animal can <code class="docutils literal notranslate"><span class="pre">Excrete</span></code>
 (removing and printing what was <em>first</em> in the gut List).
-Recall the method <code class="docutils literal notranslate"><span class="pre">RemoveAt</span></code> in <a class="reference internal" href="../lists/listsyntax.html#listsyntax"><span class="std std-ref">List Syntax</span></a>.  Print the
+Recall the method <code class="docutils literal notranslate"><span class="pre">RemoveAt</span></code> in <a class="reference internal" href="../11.lists/listsyntax.html#listsyntax"><span class="std std-ref">List Syntax</span></a>.  Print the
 empty string, “”, if the <code class="docutils literal notranslate"><span class="pre">gut</span></code>
 <em>was already empty</em>.  Following the
 Froggy example above, Froggy could <code class="docutils literal notranslate"><span class="pre">Excrete</span></code>,
@@ -779,7 +781,7 @@ you might change the original name <code class="docutils literal notranslate"><s
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 01:25:28.
+      <span class="lastupdated">Last updated on 19-July-2024 01:36:36.
       </span></p>
   </div>
 

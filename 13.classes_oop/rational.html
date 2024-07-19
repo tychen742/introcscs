@@ -46,25 +46,16 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="../context/context.html">1. Context</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../data/data.html">2. C# Data and Operations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../functions/functions.html">3. Defining Functions of your Own</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../basicstringops/basicstringops.html">4. Basic String Operations</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../decisions/decisions.html">5. Decisions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../while/while.html">6. While Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../for/for.html">8. For Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">12. Dictionaries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../interfaces/interfaces.html">13. Interfaces</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../recursion/recursion.html">14. Recursion</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../datastructures/datastructures.html">15. Data Structures</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../appendix/appendix.html">16. Appendix</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">The Rational Class</a><ul>
+<li><a class="reference internal" href="#method-parameters-of-the-same-type">Method Parameters of the Same Type</a></li>
+<li><a class="reference internal" href="#pictorial-playing-computer">Pictorial Playing Computer</a></li>
+<li><a class="reference internal" href="#forcematch-exercise">ForceMatch Exercise</a></li>
 </ul>
-
+</li>
+</ul>
+</div>
         </div>
       </div>
     </nav>
@@ -141,7 +132,7 @@ and parse string literals.  The code is from
 </div>
 <p>One non-obvious method is <code class="docutils literal notranslate"><span class="pre">CompareTo</span></code>.  This one method allows
 all the usual comparison operators to be used with the result.
-We will discuss it more in <a class="reference internal" href="../interfaces/fractions-revisited.html#rationals-revisited"><span class="std std-ref">Rationals Revisited</span></a>.</p>
+We will discuss it more in <a class="reference internal" href="../15.interfaces/fractions-revisited.html#rationals-revisited"><span class="std std-ref">Rationals Revisited</span></a>.</p>
 <p>The results we would like when running this testing code:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>6/(-10) simplifies to -3/5
 reciprocal of -3/5 is -5/3
@@ -177,7 +168,7 @@ our internal representations unique, and use the smallest numbers.</p>
 <p>Intermediate operations and initial constructor parameters
 will not always be in lowest terms.  To reduce to lowest terms
 we need to divide the original numerator and denominator by their
-<a class="reference internal" href="../while/gcdexamples.html#gcd"><span class="std std-ref">Greatest Common Divisor</span></a>.    We include a <em>static</em> GCD method taken from that section,
+<a class="reference internal" href="../6.while_loops/gcdexamples.html#gcd"><span class="std std-ref">Greatest Common Divisor</span></a>.    We include a <em>static</em> GCD method taken from that section,
 and make the adjustment to lowest terms in a helping method, <code class="docutils literal notranslate"><span class="pre">Normalize</span></code>,
 that is called by the constructor:</p>
 <div class="highlight-csharp notranslate" id="index-1"><div class="highlight"><pre><span></span><span class="w">      </span><span class="c1">/// Force the invarient: in lowest terms with a positive denominator.</span>
@@ -419,7 +410,7 @@ variables <code class="docutils literal notranslate"><span class="pre">numerator
 The figure illustrates the memory state at the beginning of the constructor call:</p>
 <a class="reference internal image-reference" href="../_images/callConstructor.png"><img alt="../_images/callConstructor.png" src="../_images/callConstructor.png" style="width: 124pt;" /></a>
 <p>Note the immediate value assigned to the numeric instance variables is zero:  This is
-as discussed in <a class="reference internal" href="../arrays/onedim.html#default-fields"><span class="std std-ref">Default Initializations</span></a>.
+as discussed in <a class="reference internal" href="../10.arrays/onedim.html#default-fields"><span class="std std-ref">Default Initializations</span></a>.
 Of course we do not want to keep those default values:
 The constructor finds the value of the local variable <code class="docutils literal notranslate"><span class="pre">numerator</span></code>, and needs to
 assign the value 6 to a variable <code class="docutils literal notranslate"><span class="pre">num</span></code>.  The compiler has looked
@@ -580,7 +571,7 @@ do a graphical play-computer like in the last section.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 01:25:28.
+      <span class="lastupdated">Last updated on 19-July-2024 01:36:36.
       </span></p>
   </div>
 
