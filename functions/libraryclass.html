@@ -73,7 +73,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../for/for.html">8. For Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. 10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">12. Dictionaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/classes.html">13. Object-Oriented Programming</a></li>
@@ -115,7 +115,7 @@
 the Painter class and split out repeated ideas into functions, leading to
 a function to prompt the user and return a double value.
 The same section included
-the example program <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/addition2/addition2.cs">addition2/addition2.cs</a>.
+the example program <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/addition2/addition2.cs">addition2/addition2.cs</a>.
 In that case there were repeated prompts for
 integers.  Clearly another common situation is to prompt for a string.
 We can create
@@ -127,7 +127,7 @@ that can be used directly for multiple programs.  We can create functions
 <code class="docutils literal notranslate"><span class="pre">PromptLine</span></code>,
 <code class="docutils literal notranslate"><span class="pre">PromptInt</span></code>, and  <code class="docutils literal notranslate"><span class="pre">PromptDouble</span></code>, and put them in their own class, <code class="docutils literal notranslate"><span class="pre">UIF</span></code>
 (for User Input First version)
-in project ui’s file <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/ui/uif.cs">uif.cs</a>.
+in project ui’s file <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/ui/uif.cs">uif.cs</a>.
 We explain the namespace line after the code:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 
@@ -187,11 +187,11 @@ same namespace to reference <em>public</em> parts of the current class, and vice
 </div>
 <div class="line"><code class="docutils literal notranslate"><span class="pre">}</span></code></div>
 </div>
-<p>We will keep user input library classes like this one, <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/ui/uif.cs">uif.cs</a>,
+<p>We will keep user input library classes like this one, <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/ui/uif.cs">uif.cs</a>,
 in a project ui.</p>
 <p>Notice that the functions we want accessible in <code class="docutils literal notranslate"><span class="pre">UIF</span></code>
 are all marked <code class="docutils literal notranslate"><span class="pre">public</span></code>, so that any class can use them.</p>
-<p>We can write a modified example addition program, <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/addition3/addition3.cs">addition3/addition3.cs</a>,
+<p>We can write a modified example addition program, <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/addition3/addition3.cs">addition3/addition3.cs</a>,
 as an example of using <code class="docutils literal notranslate"><span class="pre">UIF</span></code>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 <span class="k">namespace</span><span class="w"> </span><span class="nn">IntroCS</span>
@@ -263,7 +263,7 @@ generating programs and conventions.
 For now we will just use plain text in the <code class="docutils literal notranslate"><span class="pre">///</span></code> lines.
 This is recognized by the Xamarin Studio system. If you open our <code class="docutils literal notranslate"><span class="pre">examples</span></code> solution,
 in Xamarin Studio, and edit window for
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/addition3/addition3.cs">addition3/addition3.cs</a>,
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/addition3/addition3.cs">addition3/addition3.cs</a>,
 you can place your mouse over <code class="docutils literal notranslate"><span class="pre">UIF</span></code> and a popup window shows the <code class="docutils literal notranslate"><span class="pre">UIF</span></code> class heading
 documentation.</p>
 <p>If you move the mouse over <code class="docutils literal notranslate"><span class="pre">PromptInt</span></code>, you should see the popup label showing
@@ -305,10 +305,10 @@ Console Project selected in the dialog window, select <strong>Library Project</s
 <li><p>Then add the project name ui, and continue like when starting
 previous projects.</p></li>
 <li><p>Copy in the <code class="docutils literal notranslate"><span class="pre">.cs</span></code> files from
-our ui project, <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/ui/uif.cs">uif.cs</a> and <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/ui/ui.cs">ui.cs</a>.
+our ui project, <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/ui/uif.cs">uif.cs</a> and <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/ui/ui.cs">ui.cs</a>.
 Now you have your library project.</p></li>
 <li><p>Create another regular Console project, addition3, in your <em>same</em> solution,
-and copy in our <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/addition3/addition3.cs">addition3/addition3.cs</a>, so that is the only file.</p>
+and copy in our <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/addition3/addition3.cs">addition3/addition3.cs</a>, so that is the only file.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Xamarin Studio remembers the last kind of project you created.
@@ -382,7 +382,7 @@ thing, but use the UIF class for all user input.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 02:04:55.
+      <span class="lastupdated">Last updated on 19-July-2024 02:15:25.
       </span></p>
   </div>
 

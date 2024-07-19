@@ -73,7 +73,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../for/for.html">8. For Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. 10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">12. Dictionaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/classes.html">13. Object-Oriented Programming</a></li>
@@ -228,7 +228,7 @@ remembering where to return</p></li>
 <li><p>Line 15: Use the value returned by the function and print
 <code class="docutils literal notranslate"><span class="pre">&quot;Harrington,</span> <span class="pre">Andrew&quot;</span></code></p></li>
 </ol>
-<p>Compare <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/return2/return2.cs">return2/return2.cs</a> and <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/addition1/addition1.cs">addition1/addition1.cs</a>,
+<p>Compare <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/return2/return2.cs">return2/return2.cs</a> and <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/addition1/addition1.cs">addition1/addition1.cs</a>,
 from the previous
 section. Both use functions. Both print, but where the printing <em>is
 done</em> differs. The function <code class="docutils literal notranslate"><span class="pre">SumProblem</span></code> prints directly inside
@@ -240,14 +240,14 @@ printed in <code class="docutils literal notranslate"><span class="pre">Main</sp
 You can easily combine a sequence of functions, and you have more
 flexibility in the combinations
 if each does just one unified thing.  The function
-SumProblem in <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/addition1/addition1.cs">addition1/addition1.cs</a> does two thing:
+SumProblem in <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/addition1/addition1.cs">addition1/addition1.cs</a> does two thing:
 It creates a sentence,
 and prints it.  If that is all you have, you are out of luck if you want
 to do something different with the sentence string.  A better approach is
 to have a function that just creates the sentence, and returns it for
 whatever further use you want.  After returning that value,
 printing is one possibility, done in
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/addition2/addition2.cs">addition2/addition2.cs</a>:</p>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/addition2/addition2.cs">addition2/addition2.cs</a>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">Addition2</span>
@@ -287,7 +287,7 @@ The parameters
 have the same form as for <code class="docutils literal notranslate"><span class="pre">Console.Write</span></code>, but the formatted string is
 <em>returned</em>.</p>
 <p>Here is a revised version of the function <code class="docutils literal notranslate"><span class="pre">SumProblemString</span></code>,
-from example <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/addition2a/addition2a.cs">addition2a/addition2a.cs</a>:</p>
+from example <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/addition2a/addition2a.cs">addition2a/addition2a.cs</a>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="kt">string</span><span class="w"> </span><span class="nf">SumProblemString</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="c1">// with string.Format</span>
 <span class="p">{</span>
 <span class="w">   </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
@@ -300,7 +300,7 @@ there is <em>no</em> special function corresponding to <code class="docutils lit
 with an automatic terminating newline.
 You can generate a newline with string.Format:  Remember the
 escape code <code class="docutils literal notranslate"><span class="pre">&quot;\n&quot;</span></code>.  Put it at the end to go on to a new line.</p>
-<p><strong>In class recommendation</strong>:  Improve example <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/painting/painting.cs">painting/painting.cs</a>
+<p><strong>In class recommendation</strong>:  Improve example <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/painting/painting.cs">painting/painting.cs</a>
 with a function used for repeated similar operations.
 Copy it to a file <code class="file docutils literal notranslate"><span class="pre">painting_input.cs</span></code> in your
 own project and modify it.</p>
@@ -321,7 +321,7 @@ realistic function bodies is coming!)</p>
 <p>If you want a further example on this idea of returning
 something first and then using the result,
 or if you want to compare your work to ours,
-see our solution, <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/interview2/interview2.cs">interview2/interview2.cs</a>.</p>
+see our solution, <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/interview2/interview2.cs">interview2/interview2.cs</a>.</p>
 </section>
 <section id="quotient-string-return-exercise">
 <span id="quotientstringex"></span><h2><span class="section-number">3.5.2. </span>Quotient String Return Exercise<a class="headerlink" href="#quotient-string-return-exercise" title="Permalink to this heading"></a></h2>
@@ -351,7 +351,7 @@ the result of each call to the <code class="docutils literal notranslate"><span 
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 02:04:55.
+      <span class="lastupdated">Last updated on 19-July-2024 02:15:25.
       </span></p>
   </div>
 

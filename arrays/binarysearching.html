@@ -59,7 +59,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../for/for.html">8. For Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="arrays.html">10. 10. Arrays</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="arrays.html">10. Arrays</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="onedim.html">10.1. One Dimensional Arrays</a></li>
 <li class="toctree-l2"><a class="reference internal" href="music.html">10.2. Musical Scales and Arrays</a></li>
 <li class="toctree-l2"><a class="reference internal" href="searching.html">10.3. Linear Searching</a></li>
@@ -95,7 +95,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="arrays.html"><span class="section-number">10. </span>10. Arrays</a></li>
+          <li class="breadcrumb-item"><a href="arrays.html"><span class="section-number">10. </span>Arrays</a></li>
       <li class="breadcrumb-item active"><span class="section-number">10.5. </span>Binary Searching</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/arrays/binarysearching.rst.txt" rel="nofollow"> View page source</a>
@@ -147,7 +147,7 @@ floor of dividing by 2 (integer division, that is).</p>
 To reduce to one element
 to consider, it could be 4 or 5 steps.  Note that <span class="math notranslate nohighlight">\(4 &lt; log_2 17 &lt; 5\)</span>.</p>
 <p>Now that we’ve seen how the method works, here is the code
-in <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/binary_searching/binary_searching.cs">binary_searching/binary_searching.cs</a> that does the work:</p>
+in <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/binary_searching/binary_searching.cs">binary_searching/binary_searching.cs</a> that does the work:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1">/// Return the index of item in a non-empty sorted array data,</span>
 <span class="linenos"> 2</span><span class="c1">/// or return -1 if item is not in the array.</span>
 <span class="linenos"> 3</span><span class="k">public</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="nf">IntArrayBinarySearch</span><span class="p">(</span><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">data</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">item</span><span class="p">)</span>
@@ -194,11 +194,11 @@ at 0 in C# and ends at <code class="docutils literal notranslate"><span class="p
 It is still important to check <em>edge cases</em>:  Check that the code correctly
 returns -1 if the array has length 0 (a legal length).</p>
 <p>Similar to linear searching, we provide a main program that tests it out.
-in <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/binary_searching/binary_searching_demo.cs">binary_searching/binary_searching_demo.cs</a>.  It uses
+in <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/binary_searching/binary_searching_demo.cs">binary_searching/binary_searching_demo.cs</a>.  It uses
 an elaboration of binary search that prints
 out the steps visually, as in the introduction to this section.
 It also references previous example projects: functions from files
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/searching/extract_from_string.cs">searching/extract_from_string.cs</a> and <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/sorting/sorting.cs">sorting/sorting.cs</a>.</p>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/searching/extract_from_string.cs">searching/extract_from_string.cs</a> and <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/sorting/sorting.cs">sorting/sorting.cs</a>.</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w">   </span><span class="kt">string</span><span class="w"> </span><span class="n">input</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UI</span><span class="p">.</span><span class="n">PromptLine</span><span class="p">(</span>
 <span class="linenos"> 2</span><span class="w">      </span><span class="s">&quot;Please enter some comma/space separated integers: &quot;</span><span class="p">);</span>
 <span class="linenos"> 3</span><span class="w">   </span><span class="kt">int</span><span class="p">[]</span><span class="w"> </span><span class="n">data</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ExtractFromString</span><span class="p">.</span><span class="n">IntsFromString</span><span class="p">(</span><span class="n">input</span><span class="p">);</span>
@@ -231,10 +231,10 @@ Instead of just returning -1 if <code class="docutils literal notranslate"><span
 <li><p><code class="docutils literal notranslate"><span class="pre">-(k+1)</span></code> if <code class="docutils literal notranslate"><span class="pre">data[k-1]</span> <span class="pre">&lt;</span> <span class="pre">item</span> <span class="pre">&lt;</span> <span class="pre">data[k]</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">-(N+1)</span></code> if <code class="docutils literal notranslate"><span class="pre">data[N-1]</span> <span class="pre">&lt;</span> <span class="pre">item</span></code></p></li>
 </ul>
-<p>Modify <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/binary_searching/binary_searching.cs">binary_searching/binary_searching.cs</a> into
+<p>Modify <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/binary_searching/binary_searching.cs">binary_searching/binary_searching.cs</a> into
 <code class="file docutils literal notranslate"><span class="pre">binary_searching2.cs</span></code> so this extra information is returned
 (and indicated clearly in a main testing program derived from
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/binary_searching/binary_searching_demo.cs">binary_searching/binary_searching_demo.cs</a>).
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/binary_searching/binary_searching_demo.cs">binary_searching/binary_searching_demo.cs</a>).
 This should <em>not</em> require a change to the <code class="docutils literal notranslate"><span class="pre">while</span></code> loop, <em>nor</em>
 require any added loop.</p>
 </section>
@@ -252,7 +252,7 @@ require any added loop.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 02:04:55.
+      <span class="lastupdated">Last updated on 19-July-2024 02:15:25.
       </span></p>
   </div>
 

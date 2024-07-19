@@ -73,7 +73,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../for/for.html">8. For Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. 10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">12. Dictionaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/classes.html">13. Object-Oriented Programming</a></li>
@@ -120,13 +120,13 @@ are calling. C# enforces this idea with <em>local scope</em> rules:
 Variable names initialized and used inside one function are
 <em>invisible</em> to other functions. Such variables are called <em>local</em>
 variables. For example, an elaboration of the earlier program
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/return2/return2.cs">return2/return2.cs</a> might have its <code class="docutils literal notranslate"><span class="pre">lastFirst</span></code> function with its local
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/return2/return2.cs">return2/return2.cs</a> might have its <code class="docutils literal notranslate"><span class="pre">lastFirst</span></code> function with its local
 variable <code class="docutils literal notranslate"><span class="pre">separator</span></code>, but it might also have another function
 that defines a <code class="docutils literal notranslate"><span class="pre">separator</span></code> variable, maybe with a different value
 like <code class="docutils literal notranslate"><span class="pre">&quot;\n&quot;</span></code>. They would not conflict. They would be
 independent. This avoids lots of errors!</p>
 <p>For example, the following code in the example program
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/bad_scope/bad_scope.cs">bad_scope/bad_scope.cs</a> causes a compilation error
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/bad_scope/bad_scope.cs">bad_scope/bad_scope.cs</a> causes a compilation error
 if the last line is uncommented.
 Read it, uncomment the line, and try to run it, and see:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
@@ -156,7 +156,7 @@ the local variables already declared in <code class="docutils literal notranslat
 We will fix this error below.</p>
 <p>If you do want local data from one function to go to another,
 define the called function so it includes parameters! Read and
-compare and try the program <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/good_scope/good_scope.cs">good_scope/good_scope.cs</a>:</p>
+compare and try the program <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/good_scope/good_scope.cs">good_scope/good_scope.cs</a>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 
 <span class="k">class</span><span class="w"> </span><span class="nc">GoodScope</span>
@@ -209,7 +209,7 @@ the function where it is declared.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 02:04:55.
+      <span class="lastupdated">Last updated on 19-July-2024 02:15:25.
       </span></p>
   </div>
 

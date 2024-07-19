@@ -69,7 +69,7 @@
 <li class="toctree-l2"><a class="reference internal" href="reviewfiles.html">9.9. Chapter Review Questions</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. 10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">12. Dictionaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/classes.html">13. Object-Oriented Programming</a></li>
@@ -107,7 +107,7 @@
              
   <section id="reading-files">
 <span id="fileread"></span><span id="index-0"></span><h1><span class="section-number">9.3. </span>Reading Files<a class="headerlink" href="#reading-files" title="Permalink to this heading"></a></h1>
-<p>In Xamarin Studio, go to project <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/print_first_file">print_first_file</a>.  Note that we have added a copy of
+<p>In Xamarin Studio, go to project <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/print_first_file">print_first_file</a>.  Note that we have added a copy of
 <code class="file docutils literal notranslate"><span class="pre">sample.txt</span></code> as a project file, so it is an existing file in the project folder.
 You can open it and see that it is a copy of the file created in the last section.</p>
 <p>It will be true of most all the programs for this chapter, but you might check that we have
@@ -116,7 +116,7 @@ in this case with the path ending
 <code class="docutils literal notranslate"><span class="pre">examples/print_first_file</span></code>.  This means <code class="file docutils literal notranslate"><span class="pre">sample.txt</span></code> will be in the
 current directory when the program runs.</p>
 <p>Run the example program
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/print_first_file/print_first_file.cs">print_first_file/print_first_file.cs</a>, shown below:</p>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/print_first_file/print_first_file.cs">print_first_file/print_first_file.cs</a>, shown below:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
 <span class="k">using</span><span class="w"> </span><span class="nn">System.IO</span><span class="p">;</span>
 
@@ -254,7 +254,7 @@ from a file containing one number per line (plus possible white space):</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p id="index-6">Below and in <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/sum_file/sum_file.cs">sum_file/sum_file.cs</a> is a more elaborate, complete example,
+<p id="index-6">Below and in <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/sum_file/sum_file.cs">sum_file/sum_file.cs</a> is a more elaborate, complete example,
 that also exits gracefully if you give a bad file name.
 If you give a good file name, it skips lines that contain only whitespace.</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span><span class="w"> </span><span class="nn">System</span><span class="p">;</span>
@@ -302,8 +302,8 @@ is <code class="docutils literal notranslate"><span class="pre">File.Exists</spa
 </pre></div>
 </div>
 <p>It is true if the named files exists in the operating system’s file structure.</p>
-<p>You should see the files <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/sum_file/numbers.txt">sum_file/numbers.txt</a> and
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/sum_file/numbers2.txt">sum_file/numbers2.txt</a> in the Xamarin Studio project.  You can test
+<p>You should see the files <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/sum_file/numbers.txt">sum_file/numbers.txt</a> and
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/sum_file/numbers2.txt">sum_file/numbers2.txt</a> in the Xamarin Studio project.  You can test
 with them.  It is important to test all paths through the program: also do
 put in a bad name and see that the program exits gracefully, as intended.</p>
 <p>For files in the current folder, you can just use the plain file name.
@@ -332,7 +332,7 @@ test for this and quit gracefully in that case.</p></li>
 </section>
 <section id="example-copy-to-upper-case">
 <h2><span class="section-number">9.3.3. </span>Example Copy to Upper Case<a class="headerlink" href="#example-copy-to-upper-case" title="Permalink to this heading"></a></h2>
-<p>Here is a simple fragment from example file <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/copy_upper/copy_upper.cs">copy_upper/copy_upper.cs</a>.
+<p>Here is a simple fragment from example file <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/copy_upper/copy_upper.cs">copy_upper/copy_upper.cs</a>.
 It copies a file line by line to a new file in upper case:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">var</span><span class="w"> </span><span class="n">reader</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamReader</span><span class="p">(</span><span class="s">&quot;text.txt&quot;</span><span class="p">);</span>
 <span class="kt">var</span><span class="w"> </span><span class="n">writer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">StreamWriter</span><span class="p">(</span><span class="s">&quot;upper_text.txt&quot;</span><span class="p">);</span>
@@ -398,7 +398,7 @@ The <code class="docutils literal notranslate"><span class="pre">ReadToEnd</span
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 02:04:55.
+      <span class="lastupdated">Last updated on 19-July-2024 02:15:25.
       </span></p>
   </div>
 

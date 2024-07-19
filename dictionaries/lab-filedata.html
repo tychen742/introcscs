@@ -58,7 +58,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../for/for.html">8. For Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. 10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="dictionaries.html">12. Dictionaries</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dictionarysyntax.html">12.1. Dictionary Syntax</a></li>
@@ -113,15 +113,15 @@
 </ul>
 <section id="overview">
 <h3><span class="section-number">12.4.1.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h3>
-<p>Copy project <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub">dict_lab_stub</a> to your own project.
+<p>Copy project <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub">dict_lab_stub</a> to your own project.
 Note that there are data files in the project directory.
 Make sure your project,
 like this stub, sets the Output Path to the project folder.</p>
 <p>This lab provides a replacement file
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/fake_help.cs">fake_help.cs</a> for an improved
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/fake_help.cs">fake_help.cs</a> for an improved
 project.  The project still needs some additions in a helper class.</p>
 <p>Before we get there, open the comparison program
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/fake_help_verbose/fake_help_verbose.cs">fake_help_verbose/fake_help_verbose.cs</a> and
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/fake_help_verbose/fake_help_verbose.cs">fake_help_verbose/fake_help_verbose.cs</a> and
 look at the methods <code class="docutils literal notranslate"><span class="pre">GetParagraphs()</span></code> and <code class="docutils literal notranslate"><span class="pre">GetDictionary()</span></code>.
 All the strings for the responses are pre-coded for you there, but if
 you were writing your own methods, it would be a pain. There is all the
@@ -132,7 +132,7 @@ you to write the string data itself into a text file, with the only
 overhead being a few extra newlines. Minor further adaptations could
 save time later in a project, too.</p>
 <p>Look in your copy of
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/fake_help.cs">fake_help.cs</a>.
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/fake_help.cs">fake_help.cs</a>.
 It creates the <code class="docutils literal notranslate"><span class="pre">List</span></code> <code class="docutils literal notranslate"><span class="pre">guessList</span></code> and the
 <code class="docutils literal notranslate"><span class="pre">Dictionary</span></code> <code class="docutils literal notranslate"><span class="pre">responses</span></code> using more general functions that you need to fill in.
 The stubs for these new versions are put in
@@ -148,12 +148,12 @@ in your program (like in a game you might write soon).</p>
 Test out your work at every stage!</p>
 <p>You will need to complete very short versions of functions
 <code class="docutils literal notranslate"><span class="pre">GetParagraphs</span></code> and <code class="docutils literal notranslate"><span class="pre">GetDictionary</span></code> that have been moved to
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/file_util.cs">file_util.cs</a>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/file_util.cs">file_util.cs</a>
 and now
 take a <code class="docutils literal notranslate"><span class="pre">StreamReader</span></code> as parameter.
 The files that they read will contain the basic data.
 You can look in the lab project at the first data file:
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_defaults.txt">help_not_defaults.txt</a>,
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_defaults.txt">help_not_defaults.txt</a>,
 and the beginning is shown below:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Welcome to We-Give-Answers!
 What do you have to say?
@@ -177,7 +177,7 @@ and goodbye strings followed by all the data to go in the <code class="docutils 
 <p>One complication is that many of these strings take up several lines, in what we call
 a <em>paragraph</em>.  We follow a standard convention for putting paragraphs into plain text:
 Put a blank line after a paragraph to mark its end.  As you can see, that is how
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_defaults.txt">help_not_defaults.txt</a> is set up.</p>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_defaults.txt">help_not_defaults.txt</a> is set up.</p>
 </section>
 </section>
 <section id="steps">
@@ -191,7 +191,7 @@ the text data needed.</p>
 <section id="readparagraph">
 <h3><span class="section-number">12.4.2.1. </span>ReadParagraph<a class="headerlink" href="#readparagraph" title="Permalink to this heading"></a></h3>
 <p>The first method to complete in
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/file_util.cs">file_util.cs</a>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/file_util.cs">file_util.cs</a>
 is useful by itself and later for use in the
 <code class="docutils literal notranslate"><span class="pre">GetParagraphs</span></code> and <code class="docutils literal notranslate"><span class="pre">GetDictionary</span></code> that you will complete.  See the stub:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">/// Return a string consisting of a sequence of nonempty lines read</span>
@@ -252,7 +252,7 @@ processes more than one paragraph.</p>
 </pre></div>
 </div>
 <p>Look again at
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_defaults.txt">help_not_defaults.txt</a>,
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_defaults.txt">help_not_defaults.txt</a>,
 to see how the data is set up.</p>
 <p>This lab requires very few lines of code. Be sure to read the examples
 and instructions carefully (several times). A lot of ideas get packed
@@ -262,11 +262,11 @@ responses in the lab project program should work as the user enters lines in the
 </section>
 <section id="getdictionary">
 <h3><span class="section-number">12.4.2.3. </span>GetDictionary<a class="headerlink" href="#getdictionary" title="Permalink to this heading"></a></h3>
-<p>The last stub to complete in <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/file_util.cs">file_util.cs</a>
+<p>The last stub to complete in <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/file_util.cs">file_util.cs</a>
 is <code class="docutils literal notranslate"><span class="pre">GetDictionary</span></code>.  Its
 stub also takes a <code class="docutils literal notranslate"><span class="pre">StreamReader</span></code> as parameter.  In
 <code class="docutils literal notranslate"><span class="pre">Main</span></code> this function is called to read from
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_responses.txt">help_not_responses.txt</a>.
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_responses.txt">help_not_responses.txt</a>.
 Here are the first few lines:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>crash
 Well, it never crashes on our system. 
@@ -309,9 +309,9 @@ verbose version with the hard-coded data, using a dictionary value
 if it finds the right key,
 or choosing a random response if there is no key match.</p>
 <p>Be careful to distinguish the data file
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_responses.txt">help_not_responses.txt</a>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_responses.txt">help_not_responses.txt</a>
 from
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_responses2.txt">help_not_responses2.txt</a>,
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_responses2.txt">help_not_responses2.txt</a>,
 used in the extra credit option.</p>
 <p>This should also be an extremely short amount of coding!
 Think of following through the data file, and get the corresponding
@@ -330,7 +330,7 @@ the added or removed whitespace is hard to see in print.</p></li>
 “crashed” or “crashes”.  You could make whole file entries
 for each key variation, repeating the value paragraph.
 A concise approach is to use a data file
-like <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_responses2.txt">help_not_responses2.txt</a>.
+like <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/dict_lab_stub/help_not_responses2.txt">help_not_responses2.txt</a>.
 Here are the first few lines:</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>crash crashes crashed
 Well, it never crashes on our system. 
@@ -383,7 +383,7 @@ same response, and show to your TA.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 02:04:55.
+      <span class="lastupdated">Last updated on 19-July-2024 02:15:25.
       </span></p>
   </div>
 

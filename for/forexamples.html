@@ -65,7 +65,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. 10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">12. Dictionaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/classes.html">13. Object-Oriented Programming</a></li>
@@ -255,7 +255,7 @@ stuff
 </div>
 <p>To make the data line up with the heading titles,
 we can expand the columns, with code in example
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/power_table/power_table.cs">power_table/power_table.cs</a>:</p>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/power_table/power_table.cs">power_table/power_table.cs</a>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;{0,2}{1,7}{2,5}{3,7}&quot;</span><span class="p">,</span>
 <span class="w">                  </span><span class="s">&quot;n&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;square&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;cube&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;root&quot;</span><span class="p">);</span>
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="m">10</span><span class="p">;</span><span class="w"> </span><span class="n">n</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
@@ -647,7 +647,7 @@ have a bit of printing for the initial row label.
 Where does the code go?  It is repeated for each row, so it is inside
 the outer loop, but it is just printed once per row, so it comes <em>before</em> the
 inner column loop.  The row label is r.
-The whole code is in example <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/mod7_table/mod7_table.cs">mod7_table/mod7_table.cs</a> and below:</p>
+The whole code is in example <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/mod7_table/mod7_table.cs">mod7_table/mod7_table.cs</a> and below:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">//heading</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="s">&quot;* | &quot;</span><span class="p">);</span>
 <span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="m">7</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="c1">//column headings</span>
@@ -714,7 +714,7 @@ Recall the explicit braces are doubled.  Check out this version:</p>
 </div>
 <p>which we use in the code for the whole function, below,
 and in example program
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/mod_mult_table/mod_mult_table.cs">mod_mult_table/mod_mult_table.cs</a>.</p>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/mod_mult_table/mod_mult_table.cs">mod_mult_table/mod_mult_table.cs</a>.</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="c1">/// Print a table for modular multiplication mod n.</span>
 <span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">MultTable</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
 <span class="p">{</span>
@@ -753,7 +753,7 @@ the first part as its own function:</p>
 </pre></div>
 </div>
 <p>To go along with this chapter, we will use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop heading rather
-a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop as in <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/reversed_print/reversed_print.cs">reversed_print/reversed_print.cs</a>:</p>
+a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop as in <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/reversed_print/reversed_print.cs">reversed_print/reversed_print.cs</a>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">s</span><span class="p">.</span><span class="n">Length</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="m">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="m">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </pre></div>
 </div>
@@ -821,7 +821,7 @@ So what would <code class="docutils literal notranslate"><span class="pre">rev</
 </div>
 <p>We used our new operator <code class="docutils literal notranslate"><span class="pre">+=</span></code> to be more concise.</p>
 <p>This function and a <code class="docutils literal notranslate"><span class="pre">Main</span></code> used to demonstrate it are in
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/reversed_string/reversed_string.cs">reversed_string/reversed_string.cs</a>.</p>
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/reversed_string/reversed_string.cs">reversed_string/reversed_string.cs</a>.</p>
 </section>
 <section id="exercises">
 <h2><span class="section-number">8.2.5. </span>Exercises<a class="headerlink" href="#exercises" title="Permalink to this heading"></a></h2>
@@ -1003,7 +1003,7 @@ somewhere in the table. Consider heading widths, too.</p></li>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 02:04:55.
+      <span class="lastupdated">Last updated on 19-July-2024 02:15:25.
       </span></p>
   </div>
 

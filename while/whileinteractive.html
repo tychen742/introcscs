@@ -71,7 +71,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../foreach/foreach.html">7. Foreach Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../for/for.html">8. For Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../files/files.html">9. Files, Paths, and Directories</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. 10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">10. Arrays</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">11. Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">12. Dictionaries</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../classes/classes.html">13. Object-Oriented Programming</a></li>
@@ -286,7 +286,7 @@ Do not forget to return it at the end.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>You can try this full example, <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/input_in_range1/input_in_range1.cs">input_in_range1/input_in_range1.cs</a>.
+<p>You can try this full example, <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/input_in_range1/input_in_range1.cs">input_in_range1/input_in_range1.cs</a>.
 Look at it and then try compiling and running.</p>
 <p>Look at the Main code.
 It is redundant - the limits are written both in the prompt and in the
@@ -305,7 +305,7 @@ If you recall the
 <a class="reference internal" href="../functions/funcreturn.html#string-format"><span class="std std-ref">string.Format function</span></a>, then we can just create
 the string once, and use it twice.
 Here is a revised version, in example
-<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/input_in_range2/input_in_range2.cs">input_in_range2/input_in_range2.cs</a>,
+<a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/input_in_range2/input_in_range2.cs">input_in_range2/input_in_range2.cs</a>,
 without redundancy in the prompts in <code class="docutils literal notranslate"><span class="pre">Main</span></code>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">static</span><span class="w"> </span><span class="k">void</span><span class="w"> </span><span class="nf">Main</span><span class="p">()</span><span class="w"> </span><span class="c1">//testing routine</span>
 <span class="p">{</span>
@@ -351,7 +351,7 @@ an infinite loop by entering
 if you fail to get new input from the user at the
 end of the loop.  The condition uses the bad
 original choice forever.  Here is the loop in the mistaken version,
-from example  <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/input_in_range2_bad/input_in_range2_bad.cs">input_in_range2_bad/input_in_range2_bad.cs</a>:</p>
+from example  <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/input_in_range2_bad/input_in_range2_bad.cs">input_in_range2_bad/input_in_range2_bad.cs</a>:</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">UIF</span><span class="p">.</span><span class="n">PromptInt</span><span class="p">(</span><span class="n">longPrompt</span><span class="p">);</span>
 <span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">number</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">lowLim</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">number</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">highLim</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// infinte loop!</span>
 <span class="w">   </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&quot;{0} is out of range!&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">number</span><span class="p">);</span>
@@ -370,7 +370,7 @@ Remember <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd 
 running the program.</p>
 <section id="agree-function-exercise">
 <span id="index-5"></span><span id="id2"></span><h2><span class="section-number">6.3.1. </span>Agree Function Exercise<a class="headerlink" href="#agree-function-exercise" title="Permalink to this heading"></a></h2>
-<p>Save example <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/test_agree_stub/test_agree.cs">test_agree_stub/test_agree.cs</a>
+<p>Save example <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/test_agree_stub/test_agree.cs">test_agree_stub/test_agree.cs</a>
 in a project of your own.</p>
 <p>Yes-no (true/false) questions are common.
 How might you write an input utility function <code class="docutils literal notranslate"><span class="pre">Agree</span></code>?
@@ -393,7 +393,7 @@ numbers are entered (at least in your <em>final</em> version).</p>
 </section>
 <section id="safe-whole-number-input-exercise">
 <span id="safe-whole-number-input"></span><span id="index-6"></span><h2><span class="section-number">6.3.3. </span>Safe Whole Number Input Exercise<a class="headerlink" href="#safe-whole-number-input-exercise" title="Permalink to this heading"></a></h2>
-<p>Save example <a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/test_input_whole_stub/test_input_whole.cs">test_input_whole_stub/test_input_whole.cs</a> as
+<p>Save example <a class="reference external" href="https://github.com/tychen742/introcs-csharp-examples/blob/master/test_input_whole_stub/test_input_whole.cs">test_input_whole_stub/test_input_whole.cs</a> as
 a project of your own.  The code should test
 a function <code class="docutils literal notranslate"><span class="pre">PromptWhole</span></code>, as described below.</p>
 <p>There is an issue with reading in numbers with the PromptInt function.
@@ -425,7 +425,7 @@ the user enters something that is legal: in this case, all digits.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 19-July-2024 02:04:55.
+      <span class="lastupdated">Last updated on 19-July-2024 02:15:25.
       </span></p>
   </div>
 
