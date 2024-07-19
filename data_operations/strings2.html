@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>String Special Cases &mdash; Introduction to Computer Science in C# 19 Jul 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #922247" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Introduction to Computer Science in C#
+          </a>
+              <div class="version">
+                19 Jul 2024
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../functions/functions.html">1. Defining Functions of your Own</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../files/files.html">2. Files, Paths, and Directories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../arrays/arrays.html">3. 10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lists/lists.html">4. Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dictionaries/dictionaries.html">5. Dictionaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../testing/testing.html">6. Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../interfaces/interfaces.html">7. Interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../recursion/recursion.html">8. Recursion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../datastructures/datastructures.html">9. Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/appendix.html">10. Appendix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #922247" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Introduction to Computer Science in C#</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">String Special Cases</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/data_operations/strings2.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="string-special-cases">
+<span id="strings2"></span><h1>String Special Cases<a class="headerlink" href="#string-special-cases" title="Permalink to this heading"></a></h1>
+<p id="index-0">There are some special cases for creating literal strings.
+For instance you might want quotes
+as characters inside your string.  In this case you need special
+symbolism using a character <em>escape code</em>, starting with  <code class="docutils literal notranslate"><span class="pre">\</span></code> backslash.
+Then the character after the backslash has a special meaning.</p>
+<p>For instance a quote character after a backslash, <code class="docutils literal notranslate"><span class="pre">\&quot;</span></code>,
+does not mean the end of a string literal.  It means a quote character
+is literally used <em>in</em> the string:  <code class="docutils literal notranslate"><span class="pre">&quot;He</span> <span class="pre">said,</span> <span class="pre">\&quot;Hello!\&quot;,</span> <span class="pre">over</span> <span class="pre">and</span> <span class="pre">over.&quot;</span></code></p>
+<p>We can illustrate with csharp, first with a simple string:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>csharp&gt; Console.WriteLine(&quot;Hello world!&quot;);
+Hello world!
+csharp&gt; Console.WriteLine(&quot;He said, \&quot;Hello!\&quot;, over and over.&quot;);
+He said, &quot;Hello!&quot;, over and over.
+</pre></div>
+</div>
+<p>There are many other special cases of escape code.  The main ones
+you are likely to use are:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Escape code</p></th>
+<th class="head"><p>Meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\&quot;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;</span></code> (quote)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\'</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">'</span></code> ( single quote in char literal)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">\\</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">\</span></code> (backslash)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">\n</span></code></p></td>
+<td><p>newline</p></td>
+</tr>
+</tbody>
+</table>
+<p>Hence if you really want a backslash character in a literal,
+you need to write two of them.</p>
+<p>The newline character indicates further text will appear on the next line down
+when <em>printed</em> with the <code class="docutils literal notranslate"><span class="pre">Console.WriteLine</span></code> function.</p>
+<p>Example:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>csharp&gt; Console.WriteLine(&quot;Windows path: c:\\Users\\aharrin&quot;);
+Windows path: c:\Users\aharrin
+csharp&gt; Console.WriteLine(&quot;a\nbc\n\ndef&quot;)
+a
+bc
+
+def
+</pre></div>
+</div>
+<p id="index-1">Literal strings that are simply delimited by quotes <code class="docutils literal notranslate"><span class="pre">&quot;</span></code>
+must start and end on the same line.
+There is also a notation for <em>&#64;-quoting</em>, with an at-sign <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> before the first
+quote.  In an &#64;-quoted string, all characters are treated verbatim, including
+all backslashes.  Also the string may go on for several lines, and all newlines
+are included literally.  (The csharp program does not recognize
+multi-line &#64;-quoted strings.)
+This fragment in a program would produce the same output as the statements in
+the csharp example above:</p>
+<div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="w">       </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">@&quot;Windows path: c:\Users\aharrin&quot;</span><span class="p">);</span>
+<span class="w">       </span><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">@&quot;a</span>
+<span class="s">bc</span>
+
+<span class="s">def&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+<p>The only thing this example does not show off well is the amount of
+left margin indentation.
+That is significant in a multiline &#64;-quoted string.
+A whole simple program with this code is in example
+<a class="reference external" href="https://github.com/LoyolaChicagoBooks/introcs-csharp-examples/blob/master/at_sign_strings/at_sign_strings.cs">at_sign_strings/at_sign_strings.cs</a>.</p>
+<p id="index-2">Caution:  When you give csharp an expression evaluating to a string at the
+prompt, you get back a verbatim string with <em>quotes added around it</em>,
+but no <code class="docutils literal notranslate"><span class="pre">&#64;</span></code> to remind you that it is verbatim:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>csharp&gt; &quot;Windows path: c:\\Users\\aharrin&quot;
+&quot;Windows path: c:\Users\aharrin&quot;
+csharp&gt; &quot;a\nbc\n\ndef&quot;
+&quot;a
+bc
+
+def&quot;
+</pre></div>
+</div>
+<section id="multiline-string-exercise">
+<h2>Multiline String Exercise<a class="headerlink" href="#multiline-string-exercise" title="Permalink to this heading"></a></h2>
+<ol class="loweralpha simple">
+<li><p>Write a statement that initializes a string <code class="docutils literal notranslate"><span class="pre">s</span></code> with a <strong>single</strong>
+string literal that, when printed, shows something on one line then three
+empty lines, and then a final line with text.</p></li>
+<li><p>Declare the same string with a different string literal expression, that
+produces the same string.  (Just one of your literals should start
+with <code class="docutils literal notranslate"><span class="pre">&#64;</span></code>.)</p></li>
+</ol>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .
+      <span class="lastupdated">Last updated on 19-July-2024 01:49:32.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
