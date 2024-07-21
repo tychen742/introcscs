@@ -116,8 +116,8 @@ search engine, Google processes it, and return back answers to you.
 That’s what computer systems do: They take in information, process the information,
 and output the resulted outcome.</p>
 </section>
-<section id="programming-languages">
-<span id="index-2"></span><h2><span class="section-number">1.2.2. </span>Programming Languages<a class="headerlink" href="#programming-languages" title="Permalink to this heading"></a></h2>
+<section id="what-is-a-programming">
+<span id="index-2"></span><h2><span class="section-number">1.2.2. </span>What is a Programming?<a class="headerlink" href="#what-is-a-programming" title="Permalink to this heading"></a></h2>
 <p>To learn a natural language, we may start with some basic words for daily usage. Similarly, when it
 comes to programming languages, we also start with the basic elements of programming such as how
 computers represents numbers, letters, words, and perform arithmetic operations. Next, we learn the
@@ -162,7 +162,10 @@ computer to solve the certain problem.</p>
 </section>
 <section id="number-system">
 <span id="data-representation"></span><span id="index-4"></span><h2><span class="section-number">1.2.5. </span>Number System<a class="headerlink" href="#number-system" title="Permalink to this heading"></a></h2>
-<p id="index-5">In modern electronic computers the most basic bit of data
+<p id="index-5">In modern electronic computers are digital systems, meaning they deal with signals (data)
+that are expressed as series of the digits 0 and 1, the values that represent the physical
+state of electrical votage.</p>
+<p>the most basic bit of data
 (actually called a <em>bit</em>) is held by two-state switches, often
 in the form of a higher voltage vs. a grounded state.  The symbolic representation
 is often 0 vs. 1.  This symbolism comes from the representation of integers
@@ -203,22 +206,9 @@ sensitive to three specific colors, red, green, and blue,
 a pixel is represented by a numerical intensity
 for each of the three colors.</p>
 </section>
-<section id="index-7">
-<span id="id4"></span><h2><span class="section-number">1.2.6. </span>Programming Languages<a class="headerlink" href="#index-7" title="Permalink to this heading"></a></h2>
-<p>Programming languages can</p>
-<p>Some later languages like Java and C# use a hybrid approach: A compiler,
-that can run on any machine, does most of the work by
-translating the high-level language program
-into a low-level <em>virtual machine</em>
-language called a <em>bytecode</em>.  This is not the machine language for any real machine,
-but the bytecode is simple
-enough that writing an interpreter for it is very easy.
-Again the interpreter for the bytecode must be machine-specific.
-In this approach:</p>
-</section>
 <section id="compilation-vs-interpretation">
-<span id="index-8"></span><h2><span class="section-number">1.2.7. </span>Compilation vs. Interpretation<a class="headerlink" href="#compilation-vs-interpretation" title="Permalink to this heading"></a></h2>
-<p id="index-9">In the early years of computer development, computers only understand low-level lanugages:
+<span id="index-7"></span><h2><span class="section-number">1.2.6. </span>Compilation vs. Interpretation<a class="headerlink" href="#compilation-vs-interpretation" title="Permalink to this heading"></a></h2>
+<p id="index-8">In the early years of computer development, computers only understand low-level lanugages:
 machine code (binary digits) to be read and interpreted directly by a computer, and assembly
 language, consisting of short words to represent machine code instructions. Over time,
 high-level languages such C, C++, Perl, and Java were creaerd to make programming more
@@ -230,9 +220,15 @@ application to be run by the operating system. Scripting languages such as Bash 
 are interpreted language. They have an interpreter sitting in between the source code and
 the OS for translation and does not require compilation.</p>
 <figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="../_images/interpreted_vs_compiled.jpg"><img alt="../_images/interpreted_vs_compiled.jpg" src="../_images/interpreted_vs_compiled.jpg" style="width: 65%;" /></a>
+<a class="reference internal image-reference" href="../_images/interpreter.jpg"><img alt="../_images/interpreter.jpg" src="../_images/interpreter.jpg" style="width: 35%;" /></a>
 <figcaption>
-<p><span class="caption-text">Interpreted language versus compiled language <a class="footnote-reference brackets" href="#f3" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text">An interpreter processes the program a little at a time, alternately reading lines and performing computations. <a class="footnote-reference brackets" href="#f3" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/compiler.jpg"><img alt="../_images/compiler.jpg" src="../_images/compiler.jpg" style="width: 50%;" /></a>
+<figcaption>
+<p><span class="caption-text">A compiler translates source code into object code, which is run by a hardware executor. <a class="footnote-reference brackets" href="#f3" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id8" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 <p>Advancement in computing has brought new techniques such as just-in-time (JIT) compilation
@@ -245,23 +241,22 @@ compilers <a class="footnote-reference brackets" href="#f4" id="id6" role="doc-n
 <aside class="footnote brackets" id="f1" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>,<a role="doc-backlink" href="#id3">3</a>)</span>
-<p>Allen Downey (2022). Think Python: How to think like a computer scientist, 3rd edition. Green Tea Press. (CC BY-NC-SA 4.0)</p>
+<p>Allen B. Downey (2024). Think Python: How to think like a computer scientist, 3rd edition. Green Tea Press. (CC BY-NC-SA 4.0)</p>
 </aside>
 <aside class="footnote brackets" id="f2" role="note">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>Brad Miller &amp; David Ranum (2014). How to Think Like a Computer Scientist: Interactive Edition. (GNU FDL V.1.3)</p>
 </aside>
 <aside class="footnote brackets" id="f3" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">3</a><span class="fn-bracket">]</span></span>
-<p>Lim, A., &amp; Tjhi, W. (2015). R high performance programming. Packt Publishing Ltd.</p>
+<span class="label"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id4">1</a>,<a role="doc-backlink" href="#id5">2</a>)</span>
+<p>Allen B. Downey (2012). Think Python: How to think like a computer scientist, Version 2.0.17. Green Tea Press. (CC BY-NC-SA 4.0)</p>
 </aside>
 <aside class="footnote brackets" id="f4" role="note">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">4</a><span class="fn-bracket">]</span></span>
 <p>JIT compilaiton is for increasing runtime performance but its implementation can vary among languages. For an explanation of JIT implentation of C# and .NET, see: What is the difference between C#, .NET, IL and JIT? (2022). Steven-Giesel.com. <a class="reference external" href="https://steven-giesel.com/blogPost/aa23a1c9-8ab2-4b05-9bd2-52624af7b684">https://steven-giesel.com/blogPost/aa23a1c9-8ab2-4b05-9bd2-52624af7b684</a></p>
 </aside>
 </aside>
-<p>‌
-‌</p>
 </section>
 </section>
 
@@ -277,7 +272,7 @@ compilers <a class="footnote-reference brackets" href="#f4" id="id6" role="doc-n
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 21-July-2024 08:32:34.
+      <span class="lastupdated">Last updated on 21-July-2024 09:15:29.
       </span></p>
   </div>
 
