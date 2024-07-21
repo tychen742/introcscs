@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1.2. Key CS Ideas &mdash; Introduction to Computer Science in C# 20 Jul 2024 documentation</title>
+  <title>1.2. Key CS Ideas &mdash; Introduction to Computer Science in C# 21 Jul 2024 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
@@ -39,7 +39,7 @@
             Introduction to Computer Science in C#
           </a>
               <div class="version">
-                20 Jul 2024
+                21 Jul 2024
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -92,7 +92,7 @@
           <li class="breadcrumb-item"><a href="context.html"><span class="section-number">1. </span>Context</a></li>
       <li class="breadcrumb-item active"><span class="section-number">1.2. </span>Key CS Ideas</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/01.context/computerscience.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/01.context/cs_ideas.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -160,8 +160,8 @@ exactly. Programming is the process of implementing an algorithmic solution. By 
 of a programming language, we create a computer program containing specific instructions to the
 computer to solve the certain problem.</p>
 </section>
-<section id="data-representation">
-<span id="index-4"></span><span id="id4"></span><h2><span class="section-number">1.2.5. </span>Data Representation<a class="headerlink" href="#data-representation" title="Permalink to this heading"></a></h2>
+<section id="number-system">
+<span id="data-representation"></span><span id="index-4"></span><h2><span class="section-number">1.2.5. </span>Number System<a class="headerlink" href="#number-system" title="Permalink to this heading"></a></h2>
 <p id="index-5">In modern electronic computers the most basic bit of data
 (actually called a <em>bit</em>) is held by two-state switches, often
 in the form of a higher voltage vs. a grounded state.  The symbolic representation
@@ -204,28 +204,8 @@ a pixel is represented by a numerical intensity
 for each of the three colors.</p>
 </section>
 <section id="index-7">
-<span id="id5"></span><h2><span class="section-number">1.2.6. </span>Programming Languages<a class="headerlink" href="#index-7" title="Permalink to this heading"></a></h2>
+<span id="id4"></span><h2><span class="section-number">1.2.6. </span>Programming Languages<a class="headerlink" href="#index-7" title="Permalink to this heading"></a></h2>
 <p>Programming languages can</p>
-<p>The next big step past assembler was the advent of
-<em>high level</em> languages, with instructions more like normal mathematical or
-English expressions.  Examples are Fortran (1954) and Cobol (1959).
-A Fortran statement for calculating a slope like</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>S=(Y-V)/(X-U)
-</pre></div>
-</div>
-<p>might require seven or or more machine code instructions.</p>
-<p>To use a Fortran program required three steps: write it (onto punch cards
-originally), compile it to machine code, and execute the machine code.
-The compiler would still be architecture specific, but the compiler for
-an architecture would only need to be written once, and then any number of
-programs could be compiled and run.</p>
-<p>A later variant for executing a high-level language is
-an <em>interpreter</em>.  An interpreter translates the high-level language
-into machine code, and immediately executes it, not storing the
-machine code for later
-use, so every time a statement in the code is executed again,
-the translation needs to be redone.  Interpreters are also
-machine-specific.</p>
 <p>Some later languages like Java and C# use a hybrid approach: A compiler,
 that can run on any machine, does most of the work by
 translating the high-level language program
@@ -235,34 +215,32 @@ but the bytecode is simple
 enough that writing an interpreter for it is very easy.
 Again the interpreter for the bytecode must be machine-specific.
 In this approach:</p>
-<p>Program source =&gt; COMPILER =&gt; bytecode =&gt; INTERPRETER =&gt; execution</p>
 </section>
-<section id="key-computer-science-ideas">
-<span id="index-8"></span><h2><span class="section-number">1.2.7. </span>Key Computer Science Ideas<a class="headerlink" href="#key-computer-science-ideas" title="Permalink to this heading"></a></h2>
+<section id="compilation-vs-interpretation">
+<span id="index-8"></span><h2><span class="section-number">1.2.7. </span>Compilation vs. Interpretation<a class="headerlink" href="#compilation-vs-interpretation" title="Permalink to this heading"></a></h2>
 <p id="index-9">In the early years of computer development, computers only understand low-level lanugages:
 machine code (binary digits) to be read and interpreted directly by a computer, and assembly
 language, consisting of short words to represent machine code instructions. Over time,
 high-level languages such C, C++, Perl, and Java were creaerd to make programming more
 efficient. However, the source code written in hight-level programming languages need to be
 translated into machine code for execution. The two common types of tools for the translation
-are <em>interpreters</em> and <em>compilers</em>.</p>
-<figure class="align-default" id="id6">
-<a class="reference internal image-reference" href="../_images/interpreter.jpg"><img alt="../_images/interpreter.jpg" src="../_images/interpreter.jpg" style="width: 45%;" /></a>
-<figcaption>
-<p><span class="caption-text">An interpreter processes the program a little at a time, alternately reading lines and performing computations.</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
+are <em>interpreters</em> and <em>compilers</em>. C#, as a new member of the C-language family , is a compiled
+programming language. C# source code therefore needs to be compiled to create an executable
+application to be run by the operating system. Scripting languages such as Bash and Python
+are interpreted language. They have an interpreter sitting in between the source code and
+the OS for translation and does not require compilation.</p>
 <figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="../_images/compiler.jpg"><img alt="../_images/compiler.jpg" src="../_images/compiler.jpg" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../_images/interpreted_vs_compiled.jpg"><img alt="../_images/interpreted_vs_compiled.jpg" src="../_images/interpreted_vs_compiled.jpg" style="width: 65%;" /></a>
 <figcaption>
-<p><span class="caption-text">A compiler translates source code into object code, which is run by a hardware executor.</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Interpreted language versus compiled language <a class="footnote-reference brackets" href="#f3" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-<p>The <a class="reference internal" href="../02.data/lab-edit-compile-run.html#lab-edit-compile-run"><span class="std std-ref">Lab 1.1: Visual Studio Code (VS Code)</span></a> will introduce an alternative to the
-Microsoft environment: Xamarin Studio and Mono, which are free,
-open-source software projects that make C# available for multiple platforms:
-Windows, Mac, or Linux machines.  With a substantial fraction of students having their own
-machine that does  <em>not</em> run Windows, this flexibility is important.</p>
+<p>Advancement in computing has brought new techniques such as just-in-time (JIT) compilation
+(dynamic compilation) to combine advantages of traditonal interpretation and compilation.
+Source code is compiled into an intermediate code called bytecode to be interpreted by a
+virtual machine , then compiled into machine code for faster execution. Many contempoary
+languages, such as all .NET languages (including C#), Java, Python, and PHP use JIT
+compilers <a class="footnote-reference brackets" href="#f4" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>.</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="f1" role="note">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
@@ -273,7 +251,17 @@ machine that does  <em>not</em> run Windows, this flexibility is important.</p>
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <p>Brad Miller &amp; David Ranum (2014). How to Think Like a Computer Scientist: Interactive Edition. (GNU FDL V.1.3)</p>
 </aside>
+<aside class="footnote brackets" id="f3" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">3</a><span class="fn-bracket">]</span></span>
+<p>Lim, A., &amp; Tjhi, W. (2015). R high performance programming. Packt Publishing Ltd.</p>
 </aside>
+<aside class="footnote brackets" id="f4" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">4</a><span class="fn-bracket">]</span></span>
+<p>JIT compilaiton is for increasing runtime performance but its implementation can vary among languages. For an explanation of JIT implentation of C# and .NET, see: What is the difference between C#, .NET, IL and JIT? (2022). Steven-Giesel.com. <a class="reference external" href="https://steven-giesel.com/blogPost/aa23a1c9-8ab2-4b05-9bd2-52624af7b684">https://steven-giesel.com/blogPost/aa23a1c9-8ab2-4b05-9bd2-52624af7b684</a></p>
+</aside>
+</aside>
+<p>‌
+‌</p>
 </section>
 </section>
 
@@ -289,7 +277,7 @@ machine that does  <em>not</em> run Windows, this flexibility is important.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 20-July-2024 23:13:17.
+      <span class="lastupdated">Last updated on 21-July-2024 08:32:34.
       </span></p>
   </div>
 
