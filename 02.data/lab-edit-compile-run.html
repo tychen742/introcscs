@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1.3. Lab 1: Visual Studio Code (VS Code) &mdash; Introduction to Computer Science in C# 22 Jul 2024 documentation</title>
+  <title>2.2. Lab 1.1: Visual Studio Code (VS Code) &mdash; Introduction to Computer Science in C# 22 Jul 2024 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1.4. Chapter Review Questions" href="4.review.html" />
-    <link rel="prev" title="1.2. Key CS Ideas" href="2.cs_ideas.html" /> 
+    <link rel="next" title="2.3. Arithmetic" href="arithmetic.html" />
+    <link rel="prev" title="2.1. hello, world" href="sampleprogram.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -49,14 +49,25 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="context.html">1. 1.Introduction</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1.intro.html">1.1. Motivation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2.cs_ideas.html">1.2. Key CS Ideas</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.3. Lab 1: Visual Studio Code (VS Code)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4.review.html">1.4. Chapter Review Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../01.context/context.html">1. 1.Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="data.html">2. Data and Operations</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="sampleprogram.html">2.1. hello, world</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.2. Lab 1.1: Visual Studio Code (VS Code)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="arithmetic.html">2.3. Arithmetic</a></li>
+<li class="toctree-l2"><a class="reference internal" href="variables.html">2.4. Variables and Assignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="typography.html">2.5. Syntax Template Typography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strings1.html">2.6. Strings, Part I</a></li>
+<li class="toctree-l2"><a class="reference internal" href="print1.html">2.7. Writing to the Console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="programstructure.html">2.8. C# Program Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">2.9. Combining Input and Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strings2.html">2.10. String Special Cases</a></li>
+<li class="toctree-l2"><a class="reference internal" href="writeline-substitution.html">2.11. Substitutions in Console.WriteLine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="types-and-conversions.html">2.12. Value Types and Conversions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="learning-to-problem-solve.html">2.13. Learning to Solve Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lab-division-sentences.html">2.14. Lab: Division Sentences</a></li>
+<li class="toctree-l2"><a class="reference internal" href="reviewdataop.html">2.15. Chapter Review Questions</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../02.data/data.html">2. Data and Operations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../03.functions/functions.html">3. Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../04.basicstringops/basicstringops.html">4. Strings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../05.decisions/decisions.html">5. Decisions</a></li>
@@ -89,10 +100,10 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="context.html"><span class="section-number">1. </span>1.Introduction</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">1.3. </span>Lab 1: Visual Studio Code (VS Code)</li>
+          <li class="breadcrumb-item"><a href="data.html"><span class="section-number">2. </span>Data and Operations</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2.2. </span>Lab 1.1: Visual Studio Code (VS Code)</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/01.context/3.lab-edit-compile-run.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/02.data/lab-edit-compile-run.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -100,13 +111,13 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="lab-1-visual-studio-code-vs-code">
-<span id="lab-edit-compile-run"></span><span id="index-0"></span><h1><span class="section-number">1.3. </span>Lab 1: Visual Studio Code (VS Code)<a class="headerlink" href="#lab-1-visual-studio-code-vs-code" title="Permalink to this heading"></a></h1>
+  <section id="lab-1-1-visual-studio-code-vs-code">
+<span id="lab-edit-compile-run"></span><span id="index-0"></span><h1><span class="section-number">2.2. </span>Lab 1.1: Visual Studio Code (VS Code)<a class="headerlink" href="#lab-1-1-visual-studio-code-vs-code" title="Permalink to this heading"></a></h1>
 <p>Visual Studio Code (VS Code) is a editor with plenty of features. It has
 turned from a text editor into an integrated development editor (IDE) with a large number of
-extensions available to enhance and enrich its tools and features. A great advantage of learning
-VS Code is that it is extremely versatile. Once you learn how to use it, you can use it for
-almost every other programming languages and technology as long as they involve editing and coding. &lt;v&gt;</p>
+extensions available to enhance and enrich its tools and features. A great aspect of using VSCode is that
+once you learn how to use it, you can use it for almost every other languages and technology
+as long as they involve editing and coding. &lt;v&gt;</p>
 <p>The <em>workflow</em> that applicaiton developers and software engineers use could include the following steps:</p>
 <ol class="arabic simple">
 <li><p>Describing a problem scenario to define the goals and objectives.</p></li>
@@ -116,17 +127,23 @@ almost every other programming languages and technology as long as they involve 
 <li><p>Execute the program and debug to ensure the program runs as intended.&lt;v&gt;</p></li>
 </ol>
 <p>Tools like VS Code play a central role in walking through this workflow. For how to isntall VS Code, the .NET SDK,
-and C# Dev Kit, see <a class="reference internal" href="../18.appendix/1.dev_tools.html#development-tools"><span class="std std-ref">Development Tools</span></a>. &lt;v&gt;</p>
+and C# Dev Kit, see <a class="reference internal" href="../18.appendix/tools.html#development-tools"><span class="std std-ref">Development Tools</span></a>. &lt;v&gt;</p>
 <section id="goals">
-<h2><span class="section-number">1.3.1. </span>Goals<a class="headerlink" href="#goals" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">2.2.1. </span>Goals<a class="headerlink" href="#goals" title="Permalink to this heading"></a></h2>
 <p>To use VS Code to create your first .NET project for C# development.</p>
 </section>
 <section id="steps">
-<span id="id1"></span><h2><span class="section-number">1.3.2. </span>Steps<a class="headerlink" href="#steps" title="Permalink to this heading"></a></h2>
-<p>The .NET platform uses <em>projects</em> and <em>solutions</em> to organize code itmes in specific structure.
-A solution is a container for one or more projects, and each project would contain source code files.
-You are encouraged to create a <em>single solution for this course</em>, with all the projects that you create
-in the solution <a class="footnote-reference brackets" href="#f1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+<span id="id1"></span><h2><span class="section-number">2.2.2. </span>Steps<a class="headerlink" href="#steps" title="Permalink to this heading"></a></h2>
+<p>Xamarin Studio files and interactions
+are organized hierarchically.  At a low level are
+individual C# source code files.  One, or possibly more, are used for a
+particular <em>project</em>.  Multiple projects are gathered together under a single
+<em>solution</em>.  Xamarin Studio deals with one solution at a time, though you can
+separately create multiple solutions.  The simplest thing is to create
+a <em>single solution for this course</em>,
+and put each of the projects that you create in that one solution.
+You can keep adding onto previous efforts without having to start over
+with a new solution each time.</p>
 <p>We start by creating a <em>solution</em> with a <em>project</em> in it.  The images are from
 a Mac.  Windows versions should be similar.</p>
 <ol class="arabic">
@@ -320,7 +337,7 @@ next lab.</p>
 introductory lab: to create a Xamarin Studio project, and
 enter, compile, and run a C# program.</p>
 <section id="for-further-reinforcement">
-<h3><span class="section-number">1.3.2.1. </span>For further reinforcement<a class="headerlink" href="#for-further-reinforcement" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">2.2.2.1. </span>For further reinforcement<a class="headerlink" href="#for-further-reinforcement" title="Permalink to this heading"></a></h3>
 <ol class="arabic">
 <li><p>Can you make a new program variant print out two <em>separate</em> lines?
 This is possible with an added statement.  It is also possible
@@ -337,12 +354,6 @@ sometimes want a Library instead of a Console project.</p>
 way as before, giving a new name for the project.</p>
 </li>
 </ol>
-<aside class="footnote-list brackets">
-<aside class="footnote brackets" id="f1" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
-<p>Visual Studio requires a solution file in order to be run. Although a solution is not required for projects, it offer some benefts such as project configuration and building all projects at once.</p>
-</aside>
-</aside>
 </section>
 </section>
 </section>
@@ -351,15 +362,15 @@ way as before, giving a new name for the project.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="2.cs_ideas.html" class="btn btn-neutral float-left" title="1.2. Key CS Ideas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="4.review.html" class="btn btn-neutral float-right" title="1.4. Chapter Review Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="sampleprogram.html" class="btn btn-neutral float-left" title="2.1. hello, world" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="arithmetic.html" class="btn btn-neutral float-right" title="2.3. Arithmetic" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 22-July-2024 22:19:03.
+      <span class="lastupdated">Last updated on 22-July-2024 22:22:24.
       </span></p>
   </div>
 
