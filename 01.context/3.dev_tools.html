@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1.3. Development Tools &mdash; Introduction to Computer Science in C# 23 Jul 2024 documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1.4. Lab 1: Visual Studio Code (VS Code)" href="4.lab-edit-compile-run.html" />
+    <link rel="prev" title="1.2. Key CS/IS Ideas" href="2.cs_ideas.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Introduction to Computer Science in C#
+          </a>
+              <div class="version">
+                23 Jul 2024
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="context.html">1. 1.Introduction</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="1.intro.html">1.1. Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.cs_ideas.html">1.2. Key CS/IS Ideas</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.3. Development Tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.lab-edit-compile-run.html">1.4. Lab 1: Visual Studio Code (VS Code)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5.review.html">1.5. Chapter Review Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../02.data/data.html">2. Data and Operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../03.functions/functions.html">3. Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../04.basicstringops/basicstringops.html">4. Strings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../05.decisions/decisions.html">5. Decisions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../06.while/while.html">6. While Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../07.foreach/foreach.html">7. foreach Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../08.for/for.html">8. for Loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09.files/files.html">9. Files, Paths, and Directories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../10.arrays/arrays.html">10. Arrays</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../11.lists/lists.html">11. Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../12.dictionaries/dictionaries.html">12. Dictionaries</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13.classes/classes.html">13. Object-Oriented Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../14.testing/testing.html">14. Testing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../15.interfaces/interfaces.html">15. Interfaces</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../16.recursion/recursion.html">16. Recursion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../17.datastructures/datastructures.html">17. Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../18.appendix/appendix.html">18. Appendix</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Introduction to Computer Science in C#</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="context.html"><span class="section-number">1. </span>1.Introduction</a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1.3. </span>Development Tools</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/01.context/3.dev_tools.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="development-tools">
+<span id="index-0"></span><span id="id1"></span><h1><span class="section-number">1.3. </span>Development Tools<a class="headerlink" href="#development-tools" title="Permalink to this heading"></a></h1>
+<p>The tools requred for this book include the .NET SDK, VS Code, and the C# extension
+(a VS Code extension). In addition, we will also use the command line interface
+(CLI, the Command Prompt in Windows or shell in macOS/Linux, or just “the terminal”)
+for certain operations from time to time.</p>
+<section id="software-development-kits-sdks">
+<h2><span class="section-number">1.3.1. </span>Software Development Kits (SDKs)<a class="headerlink" href="#software-development-kits-sdks" title="Permalink to this heading"></a></h2>
+<p>A software development kit (SDK) is a collection of software development tools in one installable package.
+They facilitate the creation of applications by having a <em>compiler</em>, debugger and sometimes a software framework.
+SDKs are normally specific to a hardware platform and operating system combination. <a class="footnote-reference brackets" href="#f1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> <a class="footnote-reference brackets" href="#f2" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>)</p>
+</section>
+<section id="command-line-interface-cli">
+<h2><span class="section-number">1.3.2. </span>Command Line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Permalink to this heading"></a></h2>
+<p>Having some knowledge of using the command line interface (CLI) is necessary when learning how to code.
+Major platforms such as macOS, Windows, and Linux all have CLIs for users to operate the operating
+system’s more advanced features. Users issue text commands in the CLI rather than using the graphical
+user interface (GUI) of the operating system. Differnt systems have different CLI applications.
+For example:</p>
+<ul class="simple">
+<li><p>Windows: PowerShell</p></li>
+<li><p>macOS: Terminal</p></li>
+<li><p>Linux: Terminal/shell</p></li>
+</ul>
+<p>A <em>shell</em> is a command line interpreter program that takes commmads from users for execution in the
+operting system. The Bourne Again SHell (bash) is the most popular When you open the CLI application,
+you are working in a shell environment using the keyboard to issue commands rather than the
+poit-and-click devices with the GUI. When you start a CLI, you see a command prompt, which is
+where you issue the commands. To start navigating around the CLI environment, some of the
+essential commands include:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> (list storage) to show the files and directories in the current directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code> <em>dir</em> (make directory) to create a directory/folder called <em>dir</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">*path*</span></code> (change directory) to change in the <em>path</em> directory in the directory tree structure (path “..” means the upper level directory).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">^+C</span></code> (hold the Control key and then hit the C key) to terminate a process.</p></li>
+</ul>
+<p>In the command line, a file path is used to specify the location of a file in a
+computer’s file system structure. The file system structure begins with the root, with
+some default first level directories built in. For example, the default location after
+logging in is the user’s home directory, which can be specifed as /home/USER_NAME. Some
+special characters are commonly used for specifying path:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/</span></code> is the root of the system’s file directory tree structure</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">~</span></code> is the user’s home directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">..</span></code> means the directory one-level up of the current directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.</span></code> means the current directory</p></li>
+</ul>
+</section>
+<section id="install-vs-code-and-net-sdk">
+<h2><span class="section-number">1.3.3. </span>Install VS Code and .NET SDK<a class="headerlink" href="#install-vs-code-and-net-sdk" title="Permalink to this heading"></a></h2>
+<p>#. Install VS Code: Use a package manager or visit the Visual Studio Code
+<a class="reference external" href="https://code.visualstudio.com/Download">website</a> to install the
+current version of VS Code for your operating system. <a class="footnote-reference brackets" href="#f3" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>
+An <a class="reference external" href="https://vscode.dev">online version</a> of VS Code is also available.</p>
+<p>#. Install the .NET SDK: Visit the VS Code’s <a class="reference external" href="https://code.visualstudio.com/docs/languages/dotnet">.NET page</a>
+and scroll down to find the <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">the</span> <span class="pre">.NET</span> <span class="pre">SDK</span></code> button to go to the .NET <a class="reference external" href="https://code.visualstudio.com/docs/languages/dotnet">https://code.visualstudio.com/docs/languages/dotnet</a>
+site to download and install the recent long term support version of .NET SDK.</p>
+</section>
+<section id="vs-code-ui">
+<h2><span class="section-number">1.3.4. </span>VS Code UI<a class="headerlink" href="#vs-code-ui" title="Permalink to this heading"></a></h2>
+<p>The element panes of VS Code include:</p>
+<blockquote>
+<div><ol class="upperalpha simple">
+<li><p>Activity Bar - Where you change the Views. For example, the default view is Explorer and you will click on the Extensions view to manage extensions.</p></li>
+<li><p>Primary Side Bar</p></li>
+<li><p>Editor</p></li>
+<li><p>Panel</p></li>
+<li><p>Status Bar</p></li>
+</ol>
+</div></blockquote>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/vscode_interface.jpg"><img alt="../_images/vscode_interface.jpg" src="../_images/vscode_interface.jpg" style="width: 600.0px; height: 398.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Basic elements in VS Code user interface</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="install-the-c-extension">
+<span id="index-1"></span><h2><span class="section-number">1.3.5. </span>#. Install the C# Extension<a class="headerlink" href="#install-the-c-extension" title="Permalink to this heading"></a></h2>
+<p>Install the Microsfot C# extensions using the VS Code Extension view.</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="f1" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
+<p>See: Wikipedia Contributors. (2024, July 2). Software development kit. Wikipedia; Wikimedia Foundation. <a class="reference external" href="https://en.wikipedia.org/wiki/Software_development_kit">https://en.wikipedia.org/wiki/Software_development_kit</a></p>
+</aside>
+<aside class="footnote brackets" id="f2" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
+<p>The Microsoft .NET (“.NET Core” before version 5) platform is an open-sourced cross-platform development platform. The .NET predecessor, “.NET Framework”, on the other hand, is an SDK for developing software that runs primarily on Microsoft Windows. Wikipedia Contributors. (2024, July 1). .NET Framework. Wikipedia; Wikimedia Foundation. <a class="reference external" href="https://en.wikipedia.org/wiki/.NET_Framework">https://en.wikipedia.org/wiki/.NET_Framework</a></p>
+</aside>
+<aside class="footnote brackets" id="f3" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">3</a><span class="fn-bracket">]</span></span>
+<p>For reasons such as handling versions, managing dependencies, and uninstallation, it is suggested that, when possible, you should use a package manager when installing software applications. Common used package managers incluce, e.g., <a class="reference external" href="https://brew.sh/">Homebrew</a> for macOS, <a class="reference external" href="https://chocolatey.org/">Chocolatey</a> for Windows, and apt/snap for Ubuntu Linux.</p>
+</aside>
+</aside>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="2.cs_ideas.html" class="btn btn-neutral float-left" title="1.2. Key CS/IS Ideas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="4.lab-edit-compile-run.html" class="btn btn-neutral float-right" title="1.4. Lab 1: Visual Studio Code (VS Code)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright .
+      <span class="lastupdated">Last updated on 23-July-2024 07:59:52.
+      </span></p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

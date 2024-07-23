@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>18. Appendix &mdash; Introduction to Computer Science in C# 22 Jul 2024 documentation</title>
+  <title>18. Appendix &mdash; Introduction to Computer Science in C# 23 Jul 2024 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
@@ -22,7 +22,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="18.1. Development Tools" href="tools.html" />
+    <link rel="next" title="18.1. Xamarin Studio" href="xamarinstudio.html" />
     <link rel="prev" title="17. Data Structures" href="../17.datastructures/datastructures.html" /> 
 </head>
 
@@ -38,7 +38,7 @@
             Introduction to Computer Science in C#
           </a>
               <div class="version">
-                22 Jul 2024
+                23 Jul 2024
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -67,18 +67,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../16.recursion/recursion.html">16. Recursion</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../17.datastructures/datastructures.html">17. Data Structures</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">18. Appendix</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tools.html">18.1. Development Tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="xamarinstudio.html">18.2. Xamarin Studio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmdline.html">18.3. Command Line Introduction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="precedence.html">18.4. Precedence of Operators</a></li>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html">18.5. Homework: Grade Calculation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html">18.6. Homework: Grade Calculation from Individual Scores</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html">18.7. Homework: Grade File</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html">18.8. Homework: Book List</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project.html">18.9. Group Project</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lab-versioncontrol.html">18.10. Lab: Version Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html">18.11. Mercurial and Teamwork</a></li>
-<li class="toctree-l2"><a class="reference internal" href="acknowledgments.html">18.12. Acknowledgments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xamarinstudio.html">18.1. Xamarin Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html">18.2. Command Line Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="precedence.html">18.3. Precedence of Operators</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html">18.4. Homework: Grade Calculation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html">18.5. Homework: Grade Calculation from Individual Scores</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html">18.6. Homework: Grade File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html">18.7. Homework: Book List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html">18.8. Group Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lab-versioncontrol.html">18.9. Lab: Version Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html">18.10. Mercurial and Teamwork</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acknowledgments.html">18.11. Acknowledgments</a></li>
 </ul>
 </li>
 </ul>
@@ -111,85 +110,72 @@
 <span id="id1"></span><h1><span class="section-number">18. </span>Appendix<a class="headerlink" href="#appendix" title="Permalink to this heading"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="tools.html">18.1. Development Tools</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#software-development-kits-sdks">18.1.1. Software Development Kits (SDKs)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#installing-tools">18.1.2. Installing Tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#command-line-interface-cli">18.1.3. Command Line Interface (CLI)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#editing-and-building-tools">18.1.4. Editing and Building Tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#about-integrated-development-environments-ide">18.1.5. About Integrated Development Environments (IDE)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#our-approach">18.1.6. Our Approach</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#installing-mono-and-xamarin-studios">18.1.7. Installing Mono and Xamarin Studios</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#os-x">18.1.8. OS X</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#windows">18.1.9. Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html#linux">18.1.10. Linux</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xamarinstudio.html">18.1. Xamarin Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cmdline.html">18.2. Command Line Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html#navigating-directories">18.2.1. Navigating Directories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html#common-commands">18.2.2. Common Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html#scripts">18.2.3. Scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html#copy-and-paste">18.2.4. Copy and Paste</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cmdline.html#command-line-shortcuts">18.2.5. Command Line Shortcuts</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="xamarinstudio.html">18.2. Xamarin Studio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cmdline.html">18.3. Command Line Introduction</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cmdline.html#navigating-directories">18.3.1. Navigating Directories</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmdline.html#common-commands">18.3.2. Common Commands</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmdline.html#scripts">18.3.3. Scripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmdline.html#copy-and-paste">18.3.4. Copy and Paste</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cmdline.html#command-line-shortcuts">18.3.5. Command Line Shortcuts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="precedence.html">18.3. Precedence of Operators</a></li>
+<li class="toctree-l1"><a class="reference internal" href="homework-gradecalculation.html">18.4. Homework: Grade Calculation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html#program-summary">18.4.1. Program Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html#details">18.4.2. Details</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html#grading-rubric">18.4.3. Grading Rubric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html#logs-and-partners">18.4.4. Logs and Partners</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="precedence.html">18.4. Precedence of Operators</a></li>
-<li class="toctree-l1"><a class="reference internal" href="homework-gradecalculation.html">18.5. Homework: Grade Calculation</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html#program-summary">18.5.1. Program Summary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html#details">18.5.2. Details</a></li>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html#grading-rubric">18.5.3. Grading Rubric</a></li>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation.html#logs-and-partners">18.5.4. Logs and Partners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="homework-gradecalculation2.html">18.5. Homework: Grade Calculation from Individual Scores</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html#functional-requirements">18.5.1. Functional Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html#style-requirements">18.5.2. Style Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html#grading-rubric">18.5.3. Grading Rubric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html#logs-and-partners">18.5.4. Logs and Partners</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="homework-gradecalculation2.html">18.6. Homework: Grade Calculation from Individual Scores</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html#functional-requirements">18.6.1. Functional Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html#style-requirements">18.6.2. Style Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html#grading-rubric">18.6.3. Grading Rubric</a></li>
-<li class="toctree-l2"><a class="reference internal" href="homework-gradecalculation2.html#logs-and-partners">18.6.4. Logs and Partners</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw-gradefiles.html">18.6. Homework: Grade File</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#brief-problem-statement">18.6.1. Brief Problem Statement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#using-c">18.6.2. Using C#</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#requirements">18.6.3. Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#hints">18.6.4. Hints</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#grading-rubric-25-points">18.6.5. Grading Rubric (25 points)</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="hw-gradefiles.html">18.7. Homework: Grade File</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#brief-problem-statement">18.7.1. Brief Problem Statement</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#using-c">18.7.2. Using C#</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#requirements">18.7.3. Requirements</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#hints">18.7.4. Hints</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-gradefiles.html#grading-rubric-25-points">18.7.5. Grading Rubric (25 points)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw-booklist.html">18.7. Homework: Book List</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#book-class">18.7.1. Book class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#booklist-class">18.7.2. BookList class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#testbooklist-class">18.7.3. TestBookList class</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#grading-rubric">18.7.4. Grading Rubric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#extra-credit">18.7.5. Extra Credit</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="hw-booklist.html">18.8. Homework: Book List</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#book-class">18.8.1. Book class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#booklist-class">18.8.2. BookList class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#testbooklist-class">18.8.3. TestBookList class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#grading-rubric">18.8.4. Grading Rubric</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hw-booklist.html#extra-credit">18.8.5. Extra Credit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project.html">18.8. Group Project</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="project.html#objectives">18.8.1. Objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#overview">18.8.2. Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#your-team">18.8.3. Your Team</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#roles">18.8.4. Roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#the-process">18.8.5. The process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#splitting-up-the-coding">18.8.6. Splitting Up The Coding</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#weekly-reports">18.8.7. Weekly reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#intermediate-deliverables">18.8.8. Intermediate deliverables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project.html#final-deliverables">18.8.9. Final Deliverables</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="project.html">18.9. Group Project</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="project.html#objectives">18.9.1. Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project.html#overview">18.9.2. Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project.html#your-team">18.9.3. Your Team</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project.html#roles">18.9.4. Roles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project.html#the-process">18.9.5. The process</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project.html#splitting-up-the-coding">18.9.6. Splitting Up The Coding</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project.html#weekly-reports">18.9.7. Weekly reports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project.html#intermediate-deliverables">18.9.8. Intermediate deliverables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="project.html#final-deliverables">18.9.9. Final Deliverables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lab-versioncontrol.html">18.9. Lab: Version Control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lab-versioncontrol.html#goals">18.9.1. Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lab-versioncontrol.html#steps">18.9.2. Steps</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="lab-versioncontrol.html">18.10. Lab: Version Control</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="lab-versioncontrol.html#goals">18.10.1. Goals</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lab-versioncontrol.html#steps">18.10.2. Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hgteamwork.html">18.10. Mercurial and Teamwork</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#planning-and-communication">18.10.1. Planning and Communication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#typical-scenario">18.10.2. Typical Scenario</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#conflict-avoidance">18.10.3. Conflict Avoidance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#e-mail-notifications">18.10.4. E-mail Notifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#communication-is-key-to-success">18.10.5. Communication is Key to Success</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="hgteamwork.html">18.11. Mercurial and Teamwork</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#planning-and-communication">18.11.1. Planning and Communication</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#typical-scenario">18.11.2. Typical Scenario</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#conflict-avoidance">18.11.3. Conflict Avoidance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#e-mail-notifications">18.11.4. E-mail Notifications</a></li>
-<li class="toctree-l2"><a class="reference internal" href="hgteamwork.html#communication-is-key-to-success">18.11.5. Communication is Key to Success</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledgments.html">18.12. Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledgments.html">18.11. Acknowledgments</a></li>
 </ul>
 </div>
 </section>
@@ -199,14 +185,14 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../17.datastructures/datastructures.html" class="btn btn-neutral float-left" title="17. Data Structures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="tools.html" class="btn btn-neutral float-right" title="18.1. Development Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="xamarinstudio.html" class="btn btn-neutral float-right" title="18.1. Xamarin Studio" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 22-July-2024 22:22:24.
+      <span class="lastupdated">Last updated on 23-July-2024 07:59:52.
       </span></p>
   </div>
 
