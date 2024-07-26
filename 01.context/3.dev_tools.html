@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1.3. Development Tools &mdash; Introduction to Computer Science in C# 23 Jul 2024 documentation</title>
+  <title>1.3. Development Tools &mdash; Introduction to Computer Science in C# 26 Jul 2024 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
@@ -23,7 +23,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="1.4. Lab 1: Visual Studio Code (VS Code)" href="4.lab-edit-compile-run.html" />
-    <link rel="prev" title="1.2. Key CS/IS Ideas" href="2.cs_ideas.html" /> 
+    <link rel="prev" title="1.2. Key Computing Ideas" href="2.cs_ideas.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -38,7 +38,7 @@
             Introduction to Computer Science in C#
           </a>
               <div class="version">
-                23 Jul 2024
+                26 Jul 2024
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -49,9 +49,9 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="context.html">1. 1.Introduction</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="context.html">1. Introduction</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="1.intro.html">1.1. Motivation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="2.cs_ideas.html">1.2. Key CS/IS Ideas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.cs_ideas.html">1.2. Key Computing Ideas</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">1.3. Development Tools</a></li>
 <li class="toctree-l2"><a class="reference internal" href="4.lab-edit-compile-run.html">1.4. Lab 1: Visual Studio Code (VS Code)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="5.review.html">1.5. Chapter Review Questions</a></li>
@@ -90,7 +90,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="context.html"><span class="section-number">1. </span>1.Introduction</a></li>
+          <li class="breadcrumb-item"><a href="context.html"><span class="section-number">1. </span>Introduction</a></li>
       <li class="breadcrumb-item active"><span class="section-number">1.3. </span>Development Tools</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/01.context/3.dev_tools.rst.txt" rel="nofollow"> View page source</a>
@@ -111,26 +111,32 @@ for certain operations from time to time.</p>
 <h2><span class="section-number">1.3.1. </span>Software Development Kits (SDKs)<a class="headerlink" href="#software-development-kits-sdks" title="Permalink to this heading"></a></h2>
 <p>A software development kit (SDK) is a collection of software development tools in one installable package.
 They facilitate the creation of applications by having a <em>compiler</em>, debugger and sometimes a software framework.
-SDKs are normally specific to a hardware platform and operating system combination. <a class="footnote-reference brackets" href="#f1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> <a class="footnote-reference brackets" href="#f2" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>)</p>
+SDKs are normally specific to a hardware platform and operating system combination. <a class="footnote-reference brackets" href="#f1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> <a class="footnote-reference brackets" href="#f2" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></p>
+<ul class="simple">
+<li><p><em>Runtime</em>: As part of the .NET SDK, the .NET runtime is virtual machine that converts the compiled intemedate code into macine code to be executed on the CPU. In addition, the .NET runtime provides an envrionment, that perfomrs services such as exception handling and garbage collection.</p></li>
+</ul>
 </section>
-<section id="command-line-interface-cli">
-<h2><span class="section-number">1.3.2. </span>Command Line Interface (CLI)<a class="headerlink" href="#command-line-interface-cli" title="Permalink to this heading"></a></h2>
-<p>Having some knowledge of using the command line interface (CLI) is necessary when learning how to code.
-Major platforms such as macOS, Windows, and Linux all have CLIs for users to operate the operating
-system’s more advanced features. Users issue text commands in the CLI rather than using the graphical
-user interface (GUI) of the operating system. Differnt systems have different CLI applications.
-For example:</p>
+<section id="command-prompt-shell">
+<h2><span class="section-number">1.3.2. </span>Command Prompt &amp; Shell<a class="headerlink" href="#command-prompt-shell" title="Permalink to this heading"></a></h2>
+<p>Having some knowledge of using the command line interface (CLI, often referred to as command prompt in Windows,
+“shell” in Linux/macOS, or <em>command line</em>/<em>terminal</em> in general) is necessary when learning how to code.
+Major platforms such as macOS, Windows, and Linux all have CLIs for users to operate the operating system’s
+more advanced features. Users issue text commands in the CLI rather than using the graphical user interface
+(GUI) of the operating system. Differnt systems have different CLI applications; for example:</p>
 <ul class="simple">
 <li><p>Windows: PowerShell</p></li>
 <li><p>macOS: Terminal</p></li>
-<li><p>Linux: Terminal/shell</p></li>
+<li><p>Linux: shell</p></li>
 </ul>
-<p>A <em>shell</em> is a command line interpreter program that takes commmads from users for execution in the
-operting system. The Bourne Again SHell (bash) is the most popular When you open the CLI application,
-you are working in a shell environment using the keyboard to issue commands rather than the
-poit-and-click devices with the GUI. When you start a CLI, you see a command prompt, which is
-where you issue the commands. To start navigating around the CLI environment, some of the
-essential commands include:</p>
+<p>When we open the CLI applicatin, a default <em>shell</em> is running as a command line interpreter program that takes
+commmads from users for execution in the operting system. For Windows, the shell is either Command Prompt
+or the often preferred PowerShell. For macOS it is zsh or bash. The Bourne Again SHell (bash) is the most
+popular shell. For Linux OS, it depends on what the distribution ships with.</p>
+<p>When you open the CLI application, you are working in a shell environment using the
+keyboard to issue commands rather than the poit-and-click devices with a GUI. In the terminal,
+you see a command prompt (<code class="docutils literal notranslate"><span class="pre">user_name&#64;computer_name:~$</span></code> for macOS/Linux or <code class="docutils literal notranslate"><span class="pre">C:\Users\user_name&gt;</span></code> for Windows) followed by a
+cursor, which is where you issue your commands. To start navigating around the CLI environment, some
+of the essential commands include:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> (list storage) to show the files and directories in the current directory</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code> <em>dir</em> (make directory) to create a directory/folder called <em>dir</em></p></li>
@@ -149,38 +155,56 @@ special characters are commonly used for specifying path:</p>
 <li><p><code class="docutils literal notranslate"><span class="pre">.</span></code> means the current directory</p></li>
 </ul>
 </section>
-<section id="install-vs-code-and-net-sdk">
-<h2><span class="section-number">1.3.3. </span>Install VS Code and .NET SDK<a class="headerlink" href="#install-vs-code-and-net-sdk" title="Permalink to this heading"></a></h2>
-<p>#. Install VS Code: Use a package manager or visit the Visual Studio Code
-<a class="reference external" href="https://code.visualstudio.com/Download">website</a> to install the
+<section id="install-vs-code-c-dev-kit-extension-and-net-sdk">
+<h2><span class="section-number">1.3.3. </span>Install VS Code, C# Dev Kit Extension, and .NET SDK<a class="headerlink" href="#install-vs-code-c-dev-kit-extension-and-net-sdk" title="Permalink to this heading"></a></h2>
+<ol class="arabic">
+<li><p>Install VS Code:</p>
+<p>Visit the Visual Studio Code
+<a class="reference external" href="https://code.visualstudio.com/Download">website</a> or use a package manager to install the
 current version of VS Code for your operating system. <a class="footnote-reference brackets" href="#f3" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>
 An <a class="reference external" href="https://vscode.dev">online version</a> of VS Code is also available.</p>
-<p>#. Install the .NET SDK: Visit the VS Code’s <a class="reference external" href="https://code.visualstudio.com/docs/languages/dotnet">.NET page</a>
-and scroll down to find the <code class="docutils literal notranslate"><span class="pre">Install</span> <span class="pre">the</span> <span class="pre">.NET</span> <span class="pre">SDK</span></code> button to go to the .NET <a class="reference external" href="https://code.visualstudio.com/docs/languages/dotnet">https://code.visualstudio.com/docs/languages/dotnet</a>
-site to download and install the recent long term support version of .NET SDK.</p>
-</section>
-<section id="vs-code-ui">
-<h2><span class="section-number">1.3.4. </span>VS Code UI<a class="headerlink" href="#vs-code-ui" title="Permalink to this heading"></a></h2>
-<p>The element panes of VS Code include:</p>
-<blockquote>
-<div><ol class="upperalpha simple">
+</li>
+</ol>
+<p>The VS Code user interface include several panes:</p>
+<ol class="upperalpha simple">
 <li><p>Activity Bar - Where you change the Views. For example, the default view is Explorer and you will click on the Extensions view to manage extensions.</p></li>
 <li><p>Primary Side Bar</p></li>
 <li><p>Editor</p></li>
 <li><p>Panel</p></li>
 <li><p>Status Bar</p></li>
 </ol>
-</div></blockquote>
 <figure class="align-default" id="id5">
 <a class="reference internal image-reference" href="../_images/vscode_interface.jpg"><img alt="../_images/vscode_interface.jpg" src="../_images/vscode_interface.jpg" style="width: 600.0px; height: 398.0px;" /></a>
 <figcaption>
 <p><span class="caption-text">Basic elements in VS Code user interface</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
-</section>
-<section id="install-the-c-extension">
-<span id="index-1"></span><h2><span class="section-number">1.3.5. </span>#. Install the C# Extension<a class="headerlink" href="#install-the-c-extension" title="Permalink to this heading"></a></h2>
-<p>Install the Microsfot C# extensions using the VS Code Extension view.</p>
+<ol class="arabic simple" start="2">
+<li><p>Install the .NET SDK</p></li>
+</ol>
+<p>Visit VS Code’s
+<a class="reference external" href="https://code.visualstudio.com/docs/languages/dotnet">.NET page</a> and scroll down to click
+on the “Install the .NET SDK” button. You will be redirected to the
+<a class="reference external" href="https://dotnet.microsoft.com/en-us/download">.NET Download</a> page, with OS,
+architect, and the recent long term support version of .NET SDK pre-seleted for you
+to start downlaoding.</p>
+<p>The download page also includes instructions for the installation and verification of the SDK.
+At the end of the installation, you should see a notification that the .NET SDK, along with
+.NET runtime, ASP.NET Core Runtime, and .NET Windows Desktop Runtime are installed.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/dotnet_sdk_installation.jpg"><img alt="../_images/dotnet_sdk_installation.jpg" src="../_images/dotnet_sdk_installation.jpg" style="width: 401.5px; height: 299.5px;" /></a>
+</figure>
+<p>To verify if .NET SDK is installed correctly, open a new terminal (e.g., PowerShell in Windows or Terminal in
+macOS) and run the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> command by type <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> and then the Enter key. If .NET is correctly
+installed, you should see results as below.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/dotnet_install_verification.jpg"><img alt="../_images/dotnet_install_verification.jpg" src="../_images/dotnet_install_verification.jpg" style="width: 300.5px; height: 121.0px;" /></a>
+</figure>
+<ol class="arabic simple" start="3">
+<li><p>Install the C# Dev Kit extension</p></li>
+</ol>
+<p>Click on the the Extension view icon on the Activity Bar, search and install the C# Dev Kit (this should
+also install the C# extension from Microsoft).</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="f1" role="note">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
@@ -202,7 +226,7 @@ site to download and install the recent long term support version of .NET SDK.</
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="2.cs_ideas.html" class="btn btn-neutral float-left" title="1.2. Key CS/IS Ideas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="2.cs_ideas.html" class="btn btn-neutral float-left" title="1.2. Key Computing Ideas" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="4.lab-edit-compile-run.html" class="btn btn-neutral float-right" title="1.4. Lab 1: Visual Studio Code (VS Code)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -210,7 +234,7 @@ site to download and install the recent long term support version of .NET SDK.</
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 23-July-2024 07:59:52.
+      <span class="lastupdated">Last updated on 26-July-2024 06:41:09.
       </span></p>
   </div>
 
