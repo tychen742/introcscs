@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>1.4. Lab 1: Visual Studio Code (VS Code) &mdash; Introduction to Computer Science in C# 26 Jul 2024 documentation</title>
+  <title>1.4. Lab 1: Environment Setup &mdash; IS&amp;T 1551 Implementing Information Systems: User Perspective</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css" />
 
@@ -22,7 +22,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="1.5. Chapter Review Questions" href="5.review.html" />
+    <link rel="next" title="1.5. Chapter Review" href="5.review.html" />
     <link rel="prev" title="1.3. Development Tools" href="3.dev_tools.html" /> 
 </head>
 
@@ -35,7 +35,7 @@
           
           
           <a href="../index.html" class="icon icon-home">
-            Introduction to Computer Science in C#
+            Intro to CS in C#
           </a>
               <div class="version">
                 26 Jul 2024
@@ -50,11 +50,11 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="context.html">1. Introduction</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1.intro.html">1.1. Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.intro.html">1.1. Introduction</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2.cs_ideas.html">1.2. Key Computing Ideas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="3.dev_tools.html">1.3. Development Tools</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.4. Lab 1: Visual Studio Code (VS Code)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="5.review.html">1.5. Chapter Review Questions</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.4. Lab 1: Environment Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="5.review.html">1.5. Chapter Review</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../02.data/data.html">2. Data and Operations</a></li>
@@ -64,11 +64,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../06.while/while.html">6. While Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../07.foreach/foreach.html">7. foreach Loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../08.for/for.html">8. for Loops</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../09.files/files.html">9. Files, Paths, and Directories</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../09.files/files.html">9. Files &amp; Paths</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../10.arrays/arrays.html">10. Arrays</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../11.lists/lists.html">11. Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../12.dictionaries/dictionaries.html">12. Dictionaries</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../13.classes/classes.html">13. Object-Oriented Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../13.classes/classes.html">13. OOP</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../14.testing/testing.html">14. Testing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../15.interfaces/interfaces.html">15. Interfaces</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../16.recursion/recursion.html">16. Recursion</a></li>
@@ -82,7 +82,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Introduction to Computer Science in C#</a>
+          <a href="../index.html">Intro to CS in C#</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -91,7 +91,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="context.html"><span class="section-number">1. </span>Introduction</a></li>
-      <li class="breadcrumb-item active"><span class="section-number">1.4. </span>Lab 1: Visual Studio Code (VS Code)</li>
+      <li class="breadcrumb-item active"><span class="section-number">1.4. </span>Lab 1: Environment Setup</li>
       <li class="wy-breadcrumbs-aside">
             <a href="../_sources/01.context/4.lab-edit-compile-run.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -101,55 +101,102 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="lab-1-visual-studio-code-vs-code">
-<span id="lab-edit-compile-run"></span><span id="index-0"></span><h1><span class="section-number">1.4. </span>Lab 1: Visual Studio Code (VS Code)<a class="headerlink" href="#lab-1-visual-studio-code-vs-code" title="Permalink to this heading"></a></h1>
-<p>Visual Studio Code (VS Code) is a editor with plenty of features. It has
-turned from a text editor into an integrated development editor (IDE) with a large number of
-extensions available to enhance and enrich its tools and features. A great advantage of learning
-VS Code is that it is extremely versatile. Once you learn how to use it, you can use it for
-almost every other programming languages and technology as long as they involve editing and coding. &lt;v&gt;</p>
-<p>The <em>workflow</em> that applicaiton developers and software engineers use could include the following steps:</p>
-<ol class="arabic simple">
-<li><p>Describing a problem scenario to define the goals and objectives.</p></li>
-<li><p>Plan and organize the features of the computer program that would solve the problem.</p></li>
-<li><p>Writing the <em>source code</em> of the program using code editors.</p></li>
-<li><p>Compile the source code into object code as a standalone executable program, usually with the help of a Software Development Kit (SDK) for linking with required resources.</p></li>
-<li><p>Execute the program and debug to ensure the program runs as intended.&lt;v&gt;</p></li>
-</ol>
-<p>Tools like VS Code play a central role in walking through this workflow. For how to isntall VS Code, the .NET SDK,
-and C# Dev Kit, see <a class="reference internal" href="3.dev_tools.html#development-tools"><span class="std std-ref">Development Tools</span></a>. &lt;v&gt;</p>
+  <section id="lab-1-environment-setup">
+<span id="lab-edit-compile-run"></span><span id="index-0"></span><h1><span class="section-number">1.4. </span>Lab 1: Environment Setup<a class="headerlink" href="#lab-1-environment-setup" title="Permalink to this heading"></a></h1>
 <section id="goals">
 <h2><span class="section-number">1.4.1. </span>Goals<a class="headerlink" href="#goals" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
-<li><p>To create a C# “hello world” app using the terminal</p></li>
-<li><p>To use VS Code to create your first .NET project for C# development.</p></li>
+<li><p>To setup the development tools needed for C# programming.</p></li>
+<li><p>To create a C# “hello world” app using the terminal.</p></li>
+<li><p>To create your first .NET project for C# development.</p></li>
 </ol>
 </section>
-<section id="steps">
-<span id="id1"></span><h2><span class="section-number">1.4.2. </span>Steps<a class="headerlink" href="#steps" title="Permalink to this heading"></a></h2>
-<ol class="arabic">
-<li><p>Follow the following steps at the CLI terminal to prepare the environment for learning C#:</p>
+<section id="install-vs-code-net-sdk-and-c-dev-kit-extension">
+<h2><span class="section-number">1.4.2. </span>Install VS Code, .NET SDK, and C# Dev Kit Extension<a class="headerlink" href="#install-vs-code-net-sdk-and-c-dev-kit-extension" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Install VS Code:</p></li>
+</ol>
 <blockquote>
-<div><ol class="arabic simple">
-<li><p>Start your terminal application. By default, you would be in your user home directory.</p></li>
-<li><p>Issue the command <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to show your present work path to make sure you are in your user home directory.</p></li>
-<li><p>Issue the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command and enter to see what files and directores are in the directory.</p></li>
-<li><p>Change to the root folder of the system (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/</span></code>)</p></li>
-<li><p>Use the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command to see what files and folders are under the root directory.</p></li>
-<li><p>Change back to your home directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code>)</p></li>
-<li><p>Create a direcotry called “workspace” (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">workspace</span></code>). ### you may add this folder to the “Trusted Folders &amp; Workspaces” later.</p></li>
-<li><p>Change directory into the workspace directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">workspace</span></code>).</p></li>
-<li><p>Inside workspace, create a directory ist_1551 (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">ist_1551</span></code>)</p></li>
-<li><p>Inside workspace, create another directory called tests (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">tests</span></code>)</p></li>
-<li><p>Go up one level into the workspace directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> to make sure that you have two directories listed: ist_1551 and tests.</p></li>
-<li><p>Change directory up one level (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>) or just <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code> to go back to the user’s home directory.</p></li>
-<li><p>Use the <code class="docutils literal notranslate"><span class="pre">exit</span></code> command to leave the terminal.</p></li>
+<div><p>Visit the Visual Studio Code <a class="reference external" href="https://code.visualstudio.com/Download">website</a> or use a package manager
+to install the current version of VS Code for your operating system. <a class="footnote-reference brackets" href="#f3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> An <a class="reference external" href="https://vscode.dev">online version</a> of VS Code is also available.</p>
+<p>The VS Code user interface include several panes:</p>
+<ol class="upperalpha simple">
+<li><p>Activity Bar - Where you change Views. For example, the default view is Explorer and you click on the Extensions view to manage extensions.</p></li>
+<li><p>Primary Side Bar</p></li>
+<li><p>Editor</p></li>
+<li><p>Panel</p></li>
+<li><p>Status Bar</p></li>
 </ol>
+<blockquote>
+<div><figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/vscode_interface.jpg"><img alt="../_images/vscode_interface.jpg" src="../_images/vscode_interface.jpg" style="width: 600.0px; height: 398.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Basic elements in VS Code user interface</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </div></blockquote>
-</li>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Install .NET SDK:</p></li>
 </ol>
-<p>The .NET platform uses <em>projects</em> and <em>solutions</em> to organize code itmes in specific structure.
+<blockquote>
+<div><p>Visit the <a class="reference external" href="https://code.visualstudio.com/docs/languages/dotnet">.NET page</a> and scroll down to click on
+the “Install the .NET SDK” button. You will be redirected to the
+<a class="reference external" href="https://dotnet.microsoft.com/en-us/download">.NET Download</a> page, with the OS, architect, and the recent
+long term support version of .NET SDK pre-seleted for you to start downlaoding.</p>
+<p>The download page also includes instructions for the installation and verification of the SDK.
+At the end of the installation, you should see a notification that the .NET SDK, along with
+.NET runtime, ASP.NET Core Runtime, and .NET Windows Desktop Runtime are installed.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/dotnet_sdk_installation.jpg"><img alt="../_images/dotnet_sdk_installation.jpg" src="../_images/dotnet_sdk_installation.jpg" style="width: 401.5px; height: 299.5px;" /></a>
+</figure>
+<p>To verify if .NET SDK is installed correctly, open a new terminal (e.g., PowerShell in Windows or Terminal in
+macOS) and run the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> command by type <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> and then hit the Enter key. If .NET is correctly
+installed, you should see results as below.</p>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/dotnet_install_verification.jpg"><img alt="../_images/dotnet_install_verification.jpg" src="../_images/dotnet_install_verification.jpg" style="width: 300.5px; height: 121.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Outcome of running the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> command in terminal</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Install the C# Dev Kit extension:</p></li>
+</ol>
+<blockquote>
+<div><p>Click on the the Extension view icon on the Activity Bar, search and install the C# Dev Kit (this should
+also install the C# extension from Microsoft).</p>
+</div></blockquote>
+</section>
+<section id="hello-world-console-app-in-c">
+<span id="steps"></span><h2><span class="section-number">1.4.3. </span>“hello, world” Console App in C#<a class="headerlink" href="#hello-world-console-app-in-c" title="Permalink to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p>Follow the following steps at the CLI terminal to prepare the environment for learning C#:</p></li>
+</ol>
+<blockquote>
+<div><p>#. Start your terminal application. By default, you would be in your user home directory with a
+command prompt. If you are using macOS or Linux, your <code class="docutils literal notranslate"><span class="pre">:~$</span></code>. If you are using Windows, type <code class="docutils literal notranslate"><span class="pre">wsl</span></code> at terminal and hit Enter, and you should see the command prompt ending with <code class="docutils literal notranslate"><span class="pre">your_username$</span></code>
+#. Issue the command <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to show your present work path to make sure you are in your user home directory.
+#. Issue the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command and enter to see what files and directores are in the directory.
+#. Change to the root folder of the system (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/</span></code>)
+#. Use the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command to see what files and folders are under the root directory.
+#. Change back to your home directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code>)
+#. Create a direcotry called “workspace” (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">workspace</span></code>). ### you may add this folder to the “Trusted Folders &amp; Workspaces” later.
+#. Change directory into the workspace directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">workspace</span></code>).
+#. Inside workspace, create a directory ist_1551 (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">ist_1551</span></code>)
+#. Inside workspace, create another directory called tests (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">tests</span></code>)
+#. Go up one level into the workspace directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>)
+#. <code class="docutils literal notranslate"><span class="pre">ls</span></code> to make sure that you have two directories listed: ist_1551 and tests.
+#. Change directory up one level (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>) or just <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code> to go back to the user’s home directory.
+#. Use the <code class="docutils literal notranslate"><span class="pre">exit</span></code> command to leave the terminal.</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p>Start VS Code</p></li>
+</ol>
+<ol class="arabic simple" start="2">
+<li><p>Create a C# Project</p></li>
+</ol>
+<p>The .NET platform uses <em>solutions</em> and <em>projects</em> to organize code items in specific structure.
 A solution is a container for one or more projects, and each project would contain source code files.
 You are encouraged to create a <em>single solution for this course</em>, with all the projects that you create
 in the solution <a class="footnote-reference brackets" href="#f1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
@@ -346,7 +393,7 @@ next lab.</p>
 introductory lab: to create a Xamarin Studio project, and
 enter, compile, and run a C# program.</p>
 <section id="for-further-reinforcement">
-<h3><span class="section-number">1.4.2.1. </span>For further reinforcement<a class="headerlink" href="#for-further-reinforcement" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">1.4.3.1. </span>For further reinforcement<a class="headerlink" href="#for-further-reinforcement" title="Permalink to this heading"></a></h3>
 <ol class="arabic">
 <li><p>Can you make a new program variant print out two <em>separate</em> lines?
 This is possible with an added statement.  It is also possible
@@ -368,6 +415,10 @@ way as before, giving a new name for the project.</p>
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
 <p>Visual Studio requires a solution file in order to be run. Although a solution is not required for projects, it offer some benefts such as project configuration and building all projects at once.</p>
 </aside>
+<aside class="footnote brackets" id="f3" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">2</a><span class="fn-bracket">]</span></span>
+<p>For reasons such as handling versions, managing dependencies, and uninstallation, it is suggested that, when possible, you should use a package manager when installing software applications. Common used package managers incluce, e.g., <a class="reference external" href="https://brew.sh/">Homebrew</a> for macOS, <a class="reference external" href="https://chocolatey.org/">Chocolatey</a> for Windows, and apt/snap for Ubuntu Linux.</p>
+</aside>
 </aside>
 </section>
 </section>
@@ -378,14 +429,14 @@ way as before, giving a new name for the project.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="3.dev_tools.html" class="btn btn-neutral float-left" title="1.3. Development Tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="5.review.html" class="btn btn-neutral float-right" title="1.5. Chapter Review Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="5.review.html" class="btn btn-neutral float-right" title="1.5. Chapter Review" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 26-July-2024 06:41:09.
+      <span class="lastupdated">Last updated on 26-July-2024 22:40:47.
       </span></p>
   </div>
 
