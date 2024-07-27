@@ -38,7 +38,7 @@
             Intro to CS in C#
           </a>
               <div class="version">
-                26 Jul 2024
+                27 Jul 2024
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -122,47 +122,55 @@ SDKs are normally specific to a hardware platform and operating system combinati
 <h2><span class="section-number">1.3.2. </span>Terminal &amp; Shell<a class="headerlink" href="#terminal-shell" title="Permalink to this heading"></a></h2>
 <p>Having some knowledge of using the command line interface (CLI, often referred to as command prompt in Windows,
 “shell” in Linux/macOS, or <em>command line</em>/<em>terminal</em> in general) is necessary when learning how to code.
-Major operting systems all have CLIs for users to interact with the
+Major operating systems all have CLIs for users to interact with the
 operating system by issuing text commands in the terminal rather than using the graphical user interface
-(GUI). Differnt systems have different default terminal applications (or “terminal emulaters” as they emulate
-the locally-attached dumb terminals).</p>
+(GUI). Different operating systems are shipped with different default terminal applications
+(or “terminal emulators” as they emulate the locally-attached dumb terminals).</p>
 <ul class="simple">
 <li><p>macOS: Terminal.app (Zsh, Bash)</p></li>
 <li><p>Linux: the shell (usually Bash)</p></li>
 <li><p>Windows: Terminal (PowerShell, Command Prompt, Bash)</p></li>
 </ul>
-<p>The terminal applications can run different (but work similarly) shells.
-For example:
-When we open a terminal applicatin, a default <em>shell</em> program is running as a command line interpreter program
-that takes commmads from users for execution in the operting system. For Windows, the default shell is
-PowerShell; for macOS it is the Z shell (Zsh); and Linux OS distributions, it is uaually the Bourne Again
-Shell (Bash).</p>
-<p>When you open the CLI application, you are working in a shell environment using the
-keyboard to issue commands without a mouse or a GUI. In the terminal,
+<p>When we open a terminal application, a default <em>shell</em> program is running as a command line interpreter program
+that takes commands from users for execution in the operating system. The terminal applications can run
+different shells and they work similarly. For Windows, the default shell is PowerShell; for macOS it is
+the Z shell (Zsh); and Linux OS distributions, it is usually the Bourne Again Shell (Bash).</p>
+<p>When you open the CLI application, you use  the keyboard (without a mouse) to issue text commands. In the terminal,
 you see a command prompt (<code class="docutils literal notranslate"><span class="pre">user_name&#64;computer_name:~$</span></code> for macOS/Linux or <code class="docutils literal notranslate"><span class="pre">C:\Users\user_name&gt;</span></code>
-for Windows) followed by a cursor, which is where you issue your commands.</p>
-<p>For Windows users, you may issue <code class="docutils literal notranslate"><span class="pre">wsl</span></code> to switch to Windows Subsystem for Linux and use Bash as your shell. Your
-command prompt will change to <code class="docutils literal notranslate"><span class="pre">user_name&#64;computername:/mnt/c/Users/user_name$</span></code>. For the purpose of this book,
-you may use PowerShell and use the Bash commands with a slightly differnt interface.</p>
-<p>To start navigating around the CLI environment, some of the essential commands include:</p>
+for Windows) followed by a cursor (maybe blinking), which is where you type to issue your commands.</p>
+<p>For Windows users, you may issue <code class="docutils literal notranslate"><span class="pre">wsl</span></code> to switch from the default PowerShell to Windows Subsystem for Linux (wsl)
+to use Bash as your shell. Your command prompt will change to <code class="docutils literal notranslate"><span class="pre">user_name&#64;computer_name:/mnt/c/Users/user_name$</span></code>.
+For the purpose of this book, you may use PowerShell and use the Bash commands with a slightly differnt interface.</p>
+<p>Unix-like OSs (such as Unix, macOS, and Linux) system are file-based, meaning the design principle dictates that
+everything in the system is a file, and the files are organized as a tree-like file system structure. In the
+command line, a <em>file path</em> is then used to specify the location of a file in a the computer’s file system structure.
+The file system structure begins with the root (<code class="docutils literal notranslate"><span class="pre">/</span></code>), with a number of default first level directories representing the
+funtionalities. For example, oen of the first the default location after logging in is the user’s home directory, which is specifed
+as /home/USER_NAME.</p>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/linux_directory_tree.gif"><img alt="../_images/linux_directory_tree.gif" src="../_images/linux_directory_tree.gif" style="width: 251.0px; height: 120.5px;" /></a>
+<figcaption>
+<p><span class="caption-text">A hypothetical Linux directory tree</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>To start navigating around the file system structure, some of the essential commands include:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> (list storage) to show the files and directories in the current directory</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code> <em>dir</em> (make directory) to create a directory/folder called <em>dir</em></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code> (present working directory) to see the full path of the current directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code> <em>folder</em> (make directory) to create a new directory called <em>folder</em></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">*path*</span></code> (change directory) to change in the <em>path</em> directory in the directory tree structure (path “..” means the upper level directory).</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">^+C</span></code> (hold the Control key and then hit the C key) to terminate a process.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">touch</span> <span class="pre">*filename*</span></code> to create an empty file.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">exit</span></code> to exit out of the terminal app.</p></li>
 </ul>
-<p>In the command line, a file path is used to specify the location of a file in a
-computer’s file system structure. The file system structure begins with the root, with
-some default first level directories built in. For example, the default location after
-logging in is the user’s home directory, which can be specifed as /home/USER_NAME. Some
-special characters are commonly used for specifying path:</p>
+<blockquote>
+<div><p>Some special characters are commonly used for specifying path:</p>
+</div></blockquote>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">/</span></code> is the root of the system’s file directory tree structure</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">~</span></code> is the user’s home directory</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">..</span></code> means the directory one-level up of the current directory</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">.</span></code> means the current directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">..</span></code> is the pathname of the directory one-level up of the current directory</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.</span></code> means the current directory; but when placed at the beginning of a file, it makes the file a hidden file.</p></li>
 </ul>
 <p>As an example, you may open your terminal app, create a directory called <code class="docutils literal notranslate"><span class="pre">test</span></code> in your home
 directory, then change into directory test, create a empty file called test.txt, and then change
@@ -180,20 +188,38 @@ username@COMPUTER:/mnt/c/Users/username$
 </section>
 <section id="integrated-development-environment-ide">
 <h2><span class="section-number">1.3.3. </span>Integrated Development Environment (IDE)<a class="headerlink" href="#integrated-development-environment-ide" title="Permalink to this heading"></a></h2>
-<p>Common integrated development environmnet (IDE) applications usually contains tools such as source-code editor,
-build automation tools, and a debugger. IDEs play an important role in the software programming workflow. Some
+<p>Integrated development environmnet (IDE) applications play a critical role in software development workflow and
+usually contains tools such as source-code editor, build automation tools, and a debugger.
 IDEs commonly used by professionals developers are: Visual Studio Code, Visual Studio, IntelliJ IDEA, Notepad++, and Vim.</p>
 <p>Visual Studio Code (VS Code) is an editor with plenty of features. It has turned from a text
 editor into an integrated development editor (IDE) with a large number of
 extensions available to enhance and enrich its tools and features. A great advantage of learning
 VS Code is that it is extremely versatile. Once you learn how to use it, you can use it for
 almost every other programming languages and technology as long as they involve editing and coding.</p>
-<figure class="align-default" id="id5">
+<figure class="align-default" id="id6">
 <a class="reference internal image-reference" href="../_images/popular_ide.jpg"><img alt="../_images/popular_ide.jpg" src="../_images/popular_ide.jpg" style="width: 348.0px; height: 191.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Visual Studio Code remains the preferred IDE across all developers. <a class="footnote-reference brackets" href="#f4" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Visual Studio Code remains the preferred IDE across all developers. <a class="footnote-reference brackets" href="#f" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
+<p>As an example, the popular IDE/editor VS Code user interface include several panes:</p>
+<blockquote>
+<div><ol class="upperalpha simple">
+<li><p>Activity Bar - Where you change Views. For example, the default view is Explorer and you click on the Extensions view to manage extensions.</p></li>
+<li><p>Primary Side Bar</p></li>
+<li><p>Editor</p></li>
+<li><p>Panel</p></li>
+<li><p>Status Bar</p></li>
+</ol>
+<blockquote>
+<div><figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/vscode_interface.jpg"><img alt="../_images/vscode_interface.jpg" src="../_images/vscode_interface.jpg" style="width: 600.0px; height: 398.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Basic elements in VS Code user interface</span><a class="headerlink" href="#id7" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+</div></blockquote>
+</div></blockquote>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="f1" role="note">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">1</a><span class="fn-bracket">]</span></span>
@@ -203,7 +229,7 @@ almost every other programming languages and technology as long as they involve 
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">2</a><span class="fn-bracket">]</span></span>
 <p>The Microsoft .NET (“.NET Core” before version 5) platform is an open-sourced cross-platform development platform. The .NET predecessor, “.NET Framework”, on the other hand, is an SDK for developing software that runs primarily on Microsoft Windows. Wikipedia Contributors. (2024, July 1). .NET Framework. Wikipedia; Wikimedia Foundation. <a class="reference external" href="https://en.wikipedia.org/wiki/.NET_Framework">https://en.wikipedia.org/wiki/.NET_Framework</a></p>
 </aside>
-<aside class="footnote brackets" id="f4" role="note">
+<aside class="footnote brackets" id="f" role="note">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id4">3</a><span class="fn-bracket">]</span></span>
 <p>StackOverflow Annual Developer Survey 2023. <a class="reference external" href="https://survey.stackoverflow.co/2023/#most-popular-technologies-new-collab-tools-prof">https://survey.stackoverflow.co/2023/#most-popular-technologies-new-collab-tools-prof</a></p>
 </aside>
@@ -223,7 +249,7 @@ almost every other programming languages and technology as long as they involve 
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 26-July-2024 22:40:47.
+      <span class="lastupdated">Last updated on 27-July-2024 21:50:44.
       </span></p>
   </div>
 

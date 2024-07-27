@@ -38,7 +38,7 @@
             Intro to CS in C#
           </a>
               <div class="version">
-                26 Jul 2024
+                27 Jul 2024
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -103,38 +103,20 @@
              
   <section id="lab-1-environment-setup">
 <span id="lab-edit-compile-run"></span><span id="index-0"></span><h1><span class="section-number">1.4. </span>Lab 1: Environment Setup<a class="headerlink" href="#lab-1-environment-setup" title="Permalink to this heading"></a></h1>
-<section id="goals">
-<h2><span class="section-number">1.4.1. </span>Goals<a class="headerlink" href="#goals" title="Permalink to this heading"></a></h2>
+<p>Our goals for this lab include:</p>
 <ol class="arabic simple">
 <li><p>To setup the development tools needed for C# programming.</p></li>
 <li><p>To create a C# “hello world” app using the terminal.</p></li>
 <li><p>To create your first .NET project for C# development.</p></li>
 </ol>
-</section>
 <section id="install-vs-code-net-sdk-and-c-dev-kit-extension">
-<h2><span class="section-number">1.4.2. </span>Install VS Code, .NET SDK, and C# Dev Kit Extension<a class="headerlink" href="#install-vs-code-net-sdk-and-c-dev-kit-extension" title="Permalink to this heading"></a></h2>
+<h2><span class="section-number">1.4.1. </span>Install VS Code, .NET SDK, and C# Dev Kit Extension<a class="headerlink" href="#install-vs-code-net-sdk-and-c-dev-kit-extension" title="Permalink to this heading"></a></h2>
 <ol class="arabic simple">
 <li><p>Install VS Code:</p></li>
 </ol>
 <blockquote>
 <div><p>Visit the Visual Studio Code <a class="reference external" href="https://code.visualstudio.com/Download">website</a> or use a package manager
 to install the current version of VS Code for your operating system. <a class="footnote-reference brackets" href="#f3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> An <a class="reference external" href="https://vscode.dev">online version</a> of VS Code is also available.</p>
-<p>The VS Code user interface include several panes:</p>
-<ol class="upperalpha simple">
-<li><p>Activity Bar - Where you change Views. For example, the default view is Explorer and you click on the Extensions view to manage extensions.</p></li>
-<li><p>Primary Side Bar</p></li>
-<li><p>Editor</p></li>
-<li><p>Panel</p></li>
-<li><p>Status Bar</p></li>
-</ol>
-<blockquote>
-<div><figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/vscode_interface.jpg"><img alt="../_images/vscode_interface.jpg" src="../_images/vscode_interface.jpg" style="width: 600.0px; height: 398.0px;" /></a>
-<figcaption>
-<p><span class="caption-text">Basic elements in VS Code user interface</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-</div></blockquote>
 </div></blockquote>
 <ol class="arabic simple" start="2">
 <li><p>Install .NET SDK:</p></li>
@@ -153,10 +135,10 @@ At the end of the installation, you should see a notification that the .NET SDK,
 <p>To verify if .NET SDK is installed correctly, open a new terminal (e.g., PowerShell in Windows or Terminal in
 macOS) and run the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> command by type <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> and then hit the Enter key. If .NET is correctly
 installed, you should see results as below.</p>
-<figure class="align-default" id="id4">
+<figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="../_images/dotnet_install_verification.jpg"><img alt="../_images/dotnet_install_verification.jpg" src="../_images/dotnet_install_verification.jpg" style="width: 300.5px; height: 121.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Outcome of running the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> command in terminal</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Outcome of running the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> command in terminal</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
@@ -168,44 +150,64 @@ installed, you should see results as below.</p>
 also install the C# extension from Microsoft).</p>
 </div></blockquote>
 </section>
-<section id="hello-world-console-app-in-c">
-<span id="steps"></span><h2><span class="section-number">1.4.3. </span>“hello, world” Console App in C#<a class="headerlink" href="#hello-world-console-app-in-c" title="Permalink to this heading"></a></h2>
+<section id="create-the-workspace">
+<span id="steps"></span><h2><span class="section-number">1.4.2. </span>Create the Workspace<a class="headerlink" href="#create-the-workspace" title="Permalink to this heading"></a></h2>
+<ol class="arabic">
+<li><p>Follow the following steps at the terminal to prepare the environment for learning C#:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can perform this task using your computer’s GUI but this is an important practice, especially if you are new to the terminal/shell.</p>
+</div>
 <ol class="arabic simple">
-<li><p>Follow the following steps at the CLI terminal to prepare the environment for learning C#:</p></li>
+<li><p>Start your terminal application. By default, you would be in your user home directory with a command prompt.</p></li>
+<li><p>Issue the command <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to show your present work path to make sure you are in your user home directory.</p></li>
+<li><p>Issue the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command and enter to see what files and directories are in the directory.</p></li>
+<li><p>Create a directory called “workspace” (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">workspace</span></code>). ### you may add this folder to the “Trusted Folders &amp; Workspaces” later when prompted by VS Code.</p></li>
+<li><p>Change directory into the workspace directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">workspace</span></code>).</p></li>
+<li><p>Inside workspace, create a directory ist_1551 (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">ist_1551</span></code>)</p></li>
+<li><p>Inside workspace, create another directory called tests (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">tests</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code> to make sure that you have two directories created: ist_1551 and tests.</p></li>
+<li><p>Change directory up one level (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>) or just <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code> to go back to the your user home directory.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">exit</span></code> command to leave the terminal.</p></li>
 </ol>
-<blockquote>
-<div><p>#. Start your terminal application. By default, you would be in your user home directory with a
-command prompt. If you are using macOS or Linux, your <code class="docutils literal notranslate"><span class="pre">:~$</span></code>. If you are using Windows, type <code class="docutils literal notranslate"><span class="pre">wsl</span></code> at terminal and hit Enter, and you should see the command prompt ending with <code class="docutils literal notranslate"><span class="pre">your_username$</span></code>
-#. Issue the command <code class="docutils literal notranslate"><span class="pre">pwd</span></code> to show your present work path to make sure you are in your user home directory.
-#. Issue the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command and enter to see what files and directores are in the directory.
-#. Change to the root folder of the system (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/</span></code>)
-#. Use the <code class="docutils literal notranslate"><span class="pre">ls</span></code> command to see what files and folders are under the root directory.
-#. Change back to your home directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code>)
-#. Create a direcotry called “workspace” (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">workspace</span></code>). ### you may add this folder to the “Trusted Folders &amp; Workspaces” later.
-#. Change directory into the workspace directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">workspace</span></code>).
-#. Inside workspace, create a directory ist_1551 (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">ist_1551</span></code>)
-#. Inside workspace, create another directory called tests (<code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">tests</span></code>)
-#. Go up one level into the workspace directory (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>)
-#. <code class="docutils literal notranslate"><span class="pre">ls</span></code> to make sure that you have two directories listed: ist_1551 and tests.
-#. Change directory up one level (<code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code>) or just <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code> to go back to the user’s home directory.
-#. Use the <code class="docutils literal notranslate"><span class="pre">exit</span></code> command to leave the terminal.</p>
-</div></blockquote>
-<ol class="arabic simple" start="2">
-<li><p>Start VS Code</p></li>
+<p>The process should look like this:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tychen@mac:~$
+tychen@mac:~$<span class="w"> </span><span class="nb">pwd</span>
+/Users/tychen
+tychen@mac:~$<span class="w"> </span>mkdir<span class="w"> </span>workspace
+tychen@mac:~$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>workspace
+tychen@mac:~/workspace$<span class="w"> </span>mkdir<span class="w"> </span>ist_1551
+tychen@mac:~/workspace$<span class="w"> </span>mkdir<span class="w"> </span>tests
+tychen@mac:~/workspace$<span class="w"> </span>ls
+ist_1551<span class="w"> </span>tests
+tychen@mac:~/workspace$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>..
+tychen@mac:~$<span class="w"> </span><span class="nb">exit</span>
+</pre></div>
+</div>
+</li>
+<li><p>Start VS Code</p>
+<p>There are two ways to start VS Code:</p>
+<ol class="arabic simple">
+<li><p>In the terminal, <code class="docutils literal notranslate"><span class="pre">cd</span></code> into the folder (“workspace” in this example) that you want to work on and type <code class="docutils literal notranslate"><span class="pre">code</span></code> to start VS Code with the folder as the working directory shown in the Explorer view.</p></li>
+<li><p>Open VS Code by clicking on the app icon or using Spotlight (macOS) to search for Visual Studio Code and Enter to open it, then from the File menu, choose Open Folder to open the workspace folder. In our scenario, we assume that the workspace folder is for more than one project so we would create a new project folder and give it a descriptive name.</p></li>
 </ol>
-<ol class="arabic simple" start="2">
-<li><p>Create a C# Project</p></li>
-</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A VS Code workspace/folder has a <code class="docutils literal notranslate"><span class="pre">settings.json</span></code> file in the <code class="docutils literal notranslate"><span class="pre">.vscode</span></code> directory for you to
+further configure the project.</p>
+</div>
+</li>
+<li><p>Create a C# Project</p>
 <p>The .NET platform uses <em>solutions</em> and <em>projects</em> to organize code items in specific structure.
 A solution is a container for one or more projects, and each project would contain source code files.
 You are encouraged to create a <em>single solution for this course</em>, with all the projects that you create
-in the solution <a class="footnote-reference brackets" href="#f1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p>
+in the solution <a class="footnote-reference brackets" href="#f1" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> but we will first practice how to do that.</p>
+</li>
+</ol>
 <p>We start by creating a <em>solution</em> with a <em>project</em> in it. The images are from
-a Mac. Windows versions should be similar.</p>
+a Mac but Windows versions should look similar.</p>
 <ol class="arabic">
-<li><p>Open Xamarin Studio, in the appropriate way for an application in your
-operating system.  It should be in the Start menu for Windows.
-Using Spotlight is quick on a Mac.</p></li>
+<li></li>
 <li><p>You get a Welcome screen.  Toward the upper left corner is a link for
 New Solution.  Click on it.  Alternately you can follow the path through the menus:
 File -&gt; New -&gt; Solution…</p>
@@ -393,7 +395,7 @@ next lab.</p>
 introductory lab: to create a Xamarin Studio project, and
 enter, compile, and run a C# program.</p>
 <section id="for-further-reinforcement">
-<h3><span class="section-number">1.4.3.1. </span>For further reinforcement<a class="headerlink" href="#for-further-reinforcement" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">1.4.2.1. </span>For further reinforcement<a class="headerlink" href="#for-further-reinforcement" title="Permalink to this heading"></a></h3>
 <ol class="arabic">
 <li><p>Can you make a new program variant print out two <em>separate</em> lines?
 This is possible with an added statement.  It is also possible
@@ -436,7 +438,7 @@ way as before, giving a new name for the project.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 26-July-2024 22:40:47.
+      <span class="lastupdated">Last updated on 27-July-2024 21:50:44.
       </span></p>
   </div>
 
