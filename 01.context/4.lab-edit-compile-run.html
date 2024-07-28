@@ -38,7 +38,7 @@
             Intro to CS in C#
           </a>
               <div class="version">
-                27 Jul 2024
+                28 Jul 2024
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -111,47 +111,44 @@
 </ol>
 <section id="install-vs-code-net-sdk-and-c-dev-kit-extension">
 <h2><span class="section-number">1.4.1. </span>Install VS Code, .NET SDK, and C# Dev Kit Extension<a class="headerlink" href="#install-vs-code-net-sdk-and-c-dev-kit-extension" title="Permalink to this heading"></a></h2>
-<ol class="arabic simple">
-<li><p>Install VS Code:</p></li>
-</ol>
-<blockquote>
-<div><p>Visit the Visual Studio Code <a class="reference external" href="https://code.visualstudio.com/Download">website</a> or use a package manager
-to install the current version of VS Code for your operating system. <a class="footnote-reference brackets" href="#f3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> An <a class="reference external" href="https://vscode.dev">online version</a> of VS Code is also available.</p>
-</div></blockquote>
-<ol class="arabic simple" start="2">
-<li><p>Install .NET SDK:</p></li>
-</ol>
-<blockquote>
-<div><p>Visit the <a class="reference external" href="https://code.visualstudio.com/docs/languages/dotnet">.NET page</a> and scroll down to click on
+<ol class="arabic">
+<li><p>Install VS Code:</p>
+<p>Visit the Visual Studio Code <a class="reference external" href="https://code.visualstudio.com/">website</a> site or use a package manager
+to install the current version of VS Code for your operating system. <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> An <a class="reference external" href="https://vscode.dev">online version</a> of VS Code is also available.</p>
+</li>
+<li><p>Install .NET SDK:</p>
+<p>Visit the <a class="reference external" href="https://code.visualstudio.com/docs/languages/dotnet">.NET page</a> and scroll down to click on
 the “Install the .NET SDK” button. You will be redirected to the
 <a class="reference external" href="https://dotnet.microsoft.com/en-us/download">.NET Download</a> page, with the OS, architect, and the recent
-long term support version of .NET SDK pre-seleted for you to start downlaoding.</p>
-<p>The download page also includes instructions for the installation and verification of the SDK.
+long term support version of .NET SDK pre-seleted for you to start downlaoding.
+The download page also includes instructions for the installation and verification of the SDK.
 At the end of the installation, you should see a notification that the .NET SDK, along with
 .NET runtime, ASP.NET Core Runtime, and .NET Windows Desktop Runtime are installed.</p>
 <figure class="align-default">
 <a class="reference internal image-reference" href="../_images/dotnet_sdk_installation.jpg"><img alt="../_images/dotnet_sdk_installation.jpg" src="../_images/dotnet_sdk_installation.jpg" style="width: 401.5px; height: 299.5px;" /></a>
 </figure>
-<p>To verify if .NET SDK is installed correctly, open a new terminal (e.g., PowerShell in Windows or Terminal in
+</li>
+</ol>
+<blockquote>
+<div><p>To verify if .NET SDK is installed correctly, open a new terminal (e.g., PowerShell in Windows or Terminal in
 macOS) and run the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> command by type <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> and then hit the Enter key. If .NET is correctly
 installed, you should see results as below.</p>
-<figure class="align-default" id="id4">
+<figure class="align-default" id="id5">
 <a class="reference internal image-reference" href="../_images/dotnet_install_verification.jpg"><img alt="../_images/dotnet_install_verification.jpg" src="../_images/dotnet_install_verification.jpg" style="width: 300.5px; height: 121.0px;" /></a>
 <figcaption>
-<p><span class="caption-text">Outcome of running the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> command in terminal</span><a class="headerlink" href="#id4" title="Permalink to this image"></a></p>
+<p><span class="caption-text">Outcome of running the <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> command in terminal</span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
 </figcaption>
 </figure>
 </div></blockquote>
-<ol class="arabic simple" start="3">
-<li><p>Install the C# Dev Kit extension:</p></li>
-</ol>
-<blockquote>
-<div><p>Click on the the Extension view icon on the Activity Bar, search and install the C# Dev Kit (this should
+<ol class="arabic" start="3">
+<li><p>Install the C# Dev Kit extension:</p>
+<p>Click on the the Extension view icon on the Activity Bar, search and install the C# Dev Kit (this should
 also install the C# extension from Microsoft).</p>
-</div></blockquote>
+</li>
+</ol>
 </section>
-<section id="create-the-workspace">
-<span id="steps"></span><h2><span class="section-number">1.4.2. </span>Create the Workspace<a class="headerlink" href="#create-the-workspace" title="Permalink to this heading"></a></h2>
+<section id="create-c-projects">
+<span id="steps"></span><h2><span class="section-number">1.4.2. </span>Create C# Projects<a class="headerlink" href="#create-c-projects" title="Permalink to this heading"></a></h2>
 <ol class="arabic">
 <li><p>Follow the following steps at the terminal to prepare the environment for learning C#:</p>
 <div class="admonition note">
@@ -188,63 +185,68 @@ tychen@mac:~$<span class="w"> </span><span class="nb">exit</span>
 <li><p>Start VS Code</p>
 <p>There are two ways to start VS Code:</p>
 <ol class="arabic simple">
-<li><p>In the terminal, <code class="docutils literal notranslate"><span class="pre">cd</span></code> into the folder (“workspace” in this example) that you want to work on and type <code class="docutils literal notranslate"><span class="pre">code</span></code> to start VS Code with the folder as the working directory shown in the Explorer view.</p></li>
-<li><p>Open VS Code by clicking on the app icon or using Spotlight (macOS) to search for Visual Studio Code and Enter to open it, then from the File menu, choose Open Folder to open the workspace folder. In our scenario, we assume that the workspace folder is for more than one project so we would create a new project folder and give it a descriptive name.</p></li>
+<li><p>In the terminal, <code class="docutils literal notranslate"><span class="pre">cd</span></code> into the folder (“workspace” in this example) that
+you want to work on and type <code class="docutils literal notranslate"><span class="pre">code</span></code> to start VS Code with the folder as
+the working directory shown in the Explorer view.</p></li>
+<li><p>Open VS Code by clicking on the app icon.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A VS Code workspace/folder has a <code class="docutils literal notranslate"><span class="pre">settings.json</span></code> file in the <code class="docutils literal notranslate"><span class="pre">.vscode</span></code> directory for you to
-further configure the project.</p>
+further configure the project. Also, checking out the VS Code docs to <a class="reference external" href="https://code.visualstudio.com/docs">get started</a> with the
+first steps of learning how to use VS Code.</p>
 </div>
 </li>
-</ol>
-</section>
-<section id="integrated-development-environment-ide">
-<h2><span class="section-number">1.4.3. </span>Integrated Development Environment (IDE)<a class="headerlink" href="#integrated-development-environment-ide" title="Permalink to this heading"></a></h2>
-<p>Integrated development environment (IDE) applications play a critical role in software development workflow and
-usually contains tools such as source-code editor, build automation tools, and a debugger.
-IDEs commonly used by professionals developers are: Visual Studio Code, Visual Studio, IntelliJ IDEA, Notepad++, and Vim.</p>
-<p>Visual Studio Code (VS Code) is an editor with plenty of features. It has turned from a text
-editor into an integrated development editor (IDE) with a large number of
-extensions available to enhance and enrich its tools and features. A great advantage of learning
-VS Code is that it is extremely versatile. Once you learn how to use it, you can use it for
-almost every other programming languages and technology as long as they involve editing and coding.</p>
-<figure class="align-default" id="id5">
-<a class="reference internal image-reference" href="../_images/popular_ide.jpg"><img alt="../_images/popular_ide.jpg" src="../_images/popular_ide.jpg" style="width: 348.0px; height: 191.0px;" /></a>
-<figcaption>
-<p><span class="caption-text">Visual Studio Code remains the preferred IDE across all developers. <a href="#id8"><span class="problematic" id="id2">[#f]_</span></a></span><a class="headerlink" href="#id5" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<p>As an example, the popular IDE/editor VS Code user interface include several panes:</p>
-<blockquote>
-<div><ol class="upperalpha simple">
-<li><p>Activity Bar - Where you change Views. For example, the default view is Explorer and you click on the Extensions view to manage extensions.</p></li>
-<li><p>Primary Side Bar</p></li>
-<li><p>Editor</p></li>
-<li><p>Panel</p></li>
-<li><p>Status Bar</p></li>
-</ol>
-<blockquote>
-<div><figure class="align-default" id="id6">
-<a class="reference internal image-reference" href="../_images/vscode_interface.jpg"><img alt="../_images/vscode_interface.jpg" src="../_images/vscode_interface.jpg" style="width: 600.0px; height: 398.0px;" /></a>
-<figcaption>
-<p><span class="caption-text">Basic elements in VS Code user interface</span><a class="headerlink" href="#id6" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-</div></blockquote>
-</div></blockquote>
-<ol class="arabic">
-<li><p>Create a C# Project</p>
+<li><p>Create a C# Hello World app</p>
 <p>The .NET platform uses <em>solutions</em> and <em>projects</em> to organize code items in specific structure.
 A solution is a container for one or more projects, and each project would contain source code files.
 You are encouraged to create a <em>single solution for this course</em>, with all the projects that you create
-in the solution <a class="footnote-reference brackets" href="#f1" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> but we will first practice how to do that.</p>
+in the solution <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> but we will first create a test project to practice that. We start by creating a <em>solution</em> with a <em>project</em> in it. The images are from
+a Mac but Windows versions should look similar.</p>
+<p>We will create our first “hello, world” app in the “tests” folder in your
+“workspace” folder by going through the following steps:</p>
+<ol class="arabic">
+<li><p>In a newly opened VS Code window (File –&gt; New Window if you are using
+VS Code for some other tasks), choose “Create .NET Project” from the Explorer
+view and choose “Console App” from the Command Pallette. Alternatively,
+Cmd-Shift-P or Win-Shift-P to bring up Command Pallette and then type .NET:
+New Project, then select “Console App” as your project template.</p></li>
+<li><p>Choose the project directory. In our example here, choose the <em>tests</em> directory
+that we created in the workspace directory under the user home directory.</p></li>
+<li><p>Choose a name for your project. In this example, type hello1 as the project name
+and Enter to confirm the project path. You should see the hello1 project created
+along with a test.sln solution file.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/hello1_project_created.jpg"><img alt="../_images/hello1_project_created.jpg" src="../_images/hello1_project_created.jpg" style="width: 152.4px; height: 96.6px;" /></a>
+</figure>
+</li>
+<li><p>Click to expand the hello1 project directory and you should see the Program.cs
+file. Click to open the file in the editor.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/hello1_program_cs.jpg"><img alt="../_images/hello1_program_cs.jpg" src="../_images/hello1_program_cs.jpg" style="width: 364.2px; height: 142.2px;" /></a>
+</figure>
+</li>
+<li><p>To run the hello1 app, you have to run it as part of a project. From the
+menu bar, choose Run –&gt; Run without Debugging. Alternatively, you can run
+the app by choosing the “Run project associated with this file” option from
+the Run Code icon (the ▷ right-pointing triangle in the upper right corner
+of the editor menu bar).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you click on Run Code triangle, you may see an error message in the
+Output panel:</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>Running<span class="o">]</span><span class="w"> </span>scriptcs<span class="w"> </span><span class="s2">&quot;/Users/tychen/workspace/tests/hello1/Program.cs&quot;</span>
+/bin/sh:<span class="w"> </span>scriptcs:<span class="w"> </span><span class="nb">command</span><span class="w"> </span>not<span class="w"> </span>found
+
+<span class="o">[</span>Done<span class="o">]</span><span class="w"> </span>exited<span class="w"> </span>with<span class="w"> </span><span class="nv">code</span><span class="o">=</span><span class="m">127</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="m">0</span>.017<span class="w"> </span>seconds
+</pre></div>
+</div>
+</div></blockquote>
+</div>
 </li>
 </ol>
-<p>We start by creating a <em>solution</em> with a <em>project</em> in it. The images are from
-a Mac but Windows versions should look similar.</p>
-<ol class="arabic">
-<li></li>
+</li>
 <li><p>You get a Welcome screen.  Toward the upper left corner is a link for
 New Solution.  Click on it.  Alternately you can follow the path through the menus:
 File -&gt; New -&gt; Solution…</p>
@@ -432,7 +434,7 @@ next lab.</p>
 introductory lab: to create a Xamarin Studio project, and
 enter, compile, and run a C# program.</p>
 <section id="for-further-reinforcement">
-<h3><span class="section-number">1.4.3.1. </span>For further reinforcement<a class="headerlink" href="#for-further-reinforcement" title="Permalink to this heading"></a></h3>
+<h3><span class="section-number">1.4.2.1. </span>For further reinforcement<a class="headerlink" href="#for-further-reinforcement" title="Permalink to this heading"></a></h3>
 <ol class="arabic">
 <li><p>Can you make a new program variant print out two <em>separate</em> lines?
 This is possible with an added statement.  It is also possible
@@ -450,12 +452,12 @@ way as before, giving a new name for the project.</p>
 </li>
 </ol>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="f1" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id3">1</a><span class="fn-bracket">]</span></span>
+<aside class="footnote brackets" id="id3" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
 <p>Visual Studio requires a solution file in order to be run. Although a solution is not required for projects, it offer some benefts such as project configuration and building all projects at once.</p>
 </aside>
-<aside class="footnote brackets" id="f3" role="note">
-<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">2</a><span class="fn-bracket">]</span></span>
+<aside class="footnote brackets" id="id4" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
 <p>For reasons such as handling versions, managing dependencies, and uninstallation, it is suggested that, when possible, you should use a package manager when installing software applications. Common used package managers incluce, e.g., <a class="reference external" href="https://brew.sh/">Homebrew</a> for macOS, <a class="reference external" href="https://chocolatey.org/">Chocolatey</a> for Windows, and apt/snap for Ubuntu Linux.</p>
 </aside>
 </aside>
@@ -475,7 +477,7 @@ way as before, giving a new name for the project.</p>
 
   <div role="contentinfo">
     <p>&#169; Copyright .
-      <span class="lastupdated">Last updated on 27-July-2024 22:09:58.
+      <span class="lastupdated">Last updated on 28-July-2024 06:54:12.
       </span></p>
   </div>
 
